@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gregory Kyro on Dr. Gregory W. Kyro</title><link>https://gregorykyro.github.io/</link><description>Recent content in Gregory Kyro on Dr. Gregory W. Kyro</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://gregorykyro.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://gregorykyro.github.io/about/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/about/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Dr. Gregory W. Kyro is a Machine Learning Scientist at Lila Sciences, where he is designing and executing machine learning projects toward the realization of &lt;em>Scientific Superintelligence&lt;/em>. He earned his PhD in Computational Biophysical Chemistry from Yale University in three years, conducting research pertaining to the development of deep learning methods for modeling protein-small molecule interactions. His work contributed significantly to early-stage drug discovery and involved collaborations with leading companies such as Pfizer, NVIDIA, Moderna, Novartis, Merck Group, and others.&lt;/p></description></item><item><title>Awards</title><link>https://gregorykyro.github.io/awards/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/awards/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gregory Kyro on Dr. Gregory W. Kyro</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/</link><description>Recent content in Gregory Kyro on Dr. Gregory W. Kyro</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://gregory-kyro.github.io/gregorykyro.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/about/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/about/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Dr. Gregory W. Kyro is a Machine Learning Scientist at Lila Sciences, where he is designing and executing machine learning projects toward the realization of &lt;em>Scientific Superintelligence&lt;/em>. He earned his PhD in Computational Biophysical Chemistry from Yale University in three years, conducting research pertaining to the development of deep learning methods for modeling protein-small molecule interactions. His work contributed significantly to early-stage drug discovery and involved collaborations with leading companies such as Pfizer, NVIDIA, Moderna, Novartis, Merck Group, and others.&lt;/p></description></item><item><title>Awards</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/awards/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/awards/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;h3 id="industry">&lt;strong>Industry&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>First Place, Merck Innovation Cup&lt;/strong> &lt;br>
@@ -33,7 +33,7 @@
 &lt;li>&lt;strong>SUNY Binghamton Undergraduate Research Award for Fall 2017&lt;/strong> &lt;br>
 &lt;strong>Issuer:&lt;/strong> SUNY Binghamton (2017)&lt;/li>
 &lt;/ul>
-&lt;!-- raw HTML omitted --></description></item><item><title>Education</title><link>https://gregorykyro.github.io/education/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/education/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted --></description></item><item><title>Education</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/education/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/education/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;h2 id="yale-university">&lt;strong>Yale University&lt;/strong>&lt;/h2>
 &lt;h3 id="phd-computational-biophysical-chemistry--20232025">&lt;strong>PhD&lt;/strong>, Computational Biophysical Chemistry | 2023–2025&lt;/h3>
 &lt;ul>
@@ -58,7 +58,7 @@
 &lt;ul>
 &lt;li>&lt;strong>GPA:&lt;/strong> 4.0&lt;/li>
 &lt;/ul>
-&lt;!-- raw HTML omitted --></description></item><item><title>Experience</title><link>https://gregorykyro.github.io/experience/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/experience/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted --></description></item><item><title>Experience</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/experience/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/experience/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;h2 id="research-experience">&lt;strong>Research Experience&lt;/strong>&lt;/h2>
 &lt;h3 id="lila-sciences">Lila Sciences&lt;/h3>
 &lt;p>&lt;strong>Machine Learning Scientist&lt;/strong> | 03/25 – Present&lt;/p>
@@ -72,7 +72,7 @@
 &lt;li>Developed statistical methods predicated on concepts from graph theory and information theory to characterize information transfer in proteins which have been applied to derive quantitative insights into the allosteric mechanisms of multiple biologically significant systems&lt;/li>
 &lt;/ul>
 &lt;h3 id="pfizer-research--development">Pfizer Research &amp;amp; Development&lt;/h3>
-&lt;p>&lt;strong>Computational Safety Sciences Intern&lt;/strong> | 05/24 – 12/24&lt;/p></description></item><item><title>Media Coverage</title><link>https://gregorykyro.github.io/media-coverage/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/media-coverage/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>&lt;strong>Computational Safety Sciences Intern&lt;/strong> | 05/24 – 12/24&lt;/p></description></item><item><title>Media Coverage</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/media-coverage/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/media-coverage/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;h2 id="biophysical-society-feature">Biophysical Society Feature&lt;/h2>
 &lt;p>&lt;strong>First-Principles Perspective on Biophysics&lt;/strong>&lt;br>
 Featured as the founder and president of the Yale University Chapter to articulate a first-principles perspective on biophysics and intellectual rigor.&lt;br>
@@ -86,7 +86,14 @@ Featured for winning first place at the 2024 Merck Innovation Cup, recognizing i
 &lt;h2 id="yale-alumni-magazine">Yale Alumni Magazine&lt;/h2>
 &lt;p>&lt;strong>Insights on Biochemistry Research&lt;/strong>&lt;br>
 Featured for sharing insights on biochemistry research and academic experiences at Yale University.&lt;br>
-&lt;a href="https://yalealumnimagazine.org/articles/5744-conversations-with-first-years">Read the full article&lt;/a>&lt;/p></description></item><item><title>Publications</title><link>https://gregorykyro.github.io/publications/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/publications/</guid><description>&lt;h2 id="scientific-publications">Scientific Publications&lt;/h2>
+&lt;a href="https://yalealumnimagazine.org/articles/5744-conversations-with-first-years">Read the full article&lt;/a>&lt;/p></description></item><item><title>Projects</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/projects/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/projects/</guid><description>&lt;h2 id="key-machine-learning-projects">Key Machine Learning Projects&lt;/h2>
+&lt;h3 id="t-alpha">T-ALPHA&lt;/h3>
+&lt;p>A Hierarchical Transformer-Based Deep Neural Network for Protein–Ligand Binding Affinity Prediction with Uncertainty-Aware Self-Learning for Protein-Specific Alignment.&lt;/p>
+&lt;p>This is the current state-of-the-art deep learning model for predicting protein-ligand binding affinity, developed during the fourth year of my PhD.&lt;/p>
+&lt;p>&lt;a href="https://github.com/gregory-kyro/T-ALPHA">GitHub Repository&lt;/a>&lt;/p>
+&lt;h3 id="cardiogenai">CardioGenAI&lt;/h3>
+&lt;p>A generative deep learning framework for re-engineering drugs for reduced hERG-related cardiotoxicity while preserving their primary pharmacology.&lt;/p>
+&lt;p>Developed during the third year of my PhD, I applied this to specific programs within Pfizer R&amp;amp;D that were dealing with hERG liabilities.&lt;/p></description></item><item><title>Publications</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/publications/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/publications/</guid><description>&lt;h2 id="scientific-publications">Scientific Publications&lt;/h2>
 &lt;h3 id="journal-articles">Journal Articles&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -105,7 +112,7 @@ Authors: &lt;strong>Kyro GW&lt;/strong>, Liu CY, Batista VS&lt;br>
 &lt;p>&lt;strong>ChemSpaceAL: Active Learning Strategy for Fine-tuning Molecular Generative Models&lt;/strong>&lt;br>
 &lt;em>Nature Machine Intelligence&lt;/em>, 2023&lt;br>
 Authors: &lt;strong>Kyro GW&lt;/strong>, Westgate DA, Batista VS, Miller K&lt;br>
-[DOI: 10.1038/s42256-xxxxx]&lt;/p></description></item><item><title>Scientific Contributions</title><link>https://gregorykyro.github.io/scientific-contributions/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregorykyro.github.io/scientific-contributions/</guid><description>&lt;hr>
+[DOI: 10.1038/s42256-xxxxx]&lt;/p></description></item><item><title>Scientific Contributions</title><link>https://gregory-kyro.github.io/gregorykyro.github.io/scientific-contributions/</link><pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate><guid>https://gregory-kyro.github.io/gregorykyro.github.io/scientific-contributions/</guid><description>&lt;hr>
 &lt;h2 id="selected-publications">&lt;strong>Selected Publications&lt;/strong>&lt;/h2>
 &lt;ul>
 &lt;li>
