@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gregory Kyro on Dr. Gregory W. Kyro</title>
-    <link>https://gregorykyro.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Gregory Kyro on Dr. Gregory W. Kyro</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gregorykyro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://gregorykyro.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Dr. Gregory W. Kyro is a Machine Learning Scientist at Lila Sciences, where he is designing and executing machine learning projects toward the realization of &lt;em&gt;Scientific Superintelligence&lt;/em&gt;. He earned his PhD in Computational Biophysical Chemistry from Yale University in three years, conducting research pertaining to the development of deep learning methods for modeling protein-small molecule interactions. His work contributed significantly to early-stage drug discovery and involved collaborations with leading companies such as Pfizer, NVIDIA, Moderna, Novartis, Merck Group, and others.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Awards</title>
-      <link>https://gregorykyro.github.io/awards/</link>
+      <link>http://localhost:1313/awards/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/awards/</guid>
+      <guid>http://localhost:1313/awards/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h3 id=&#34;industry&#34;&gt;&lt;strong&gt;Industry&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;First Place, Merck Innovation Cup&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; Merck Group (2024)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;government&#34;&gt;&lt;strong&gt;Government&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Graduate Research Fellowship&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; National Science Foundation (2023)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Award No. 5T32GM008283-35&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; National Institutes of Health (2022)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;academia&#34;&gt;&lt;strong&gt;Academia&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Stanley K. Madan Award in Inorganic Chemistry&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2021)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Honors Thesis in Chemistry&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2021)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Summer Scholars Program Award&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2021)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SUNY Binghamton Undergraduate Research Award for Spring 2020&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2020)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SUNY Binghamton Undergraduate Research Award for Fall 2019&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2019)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SUNY Binghamton Undergraduate Research Award for Spring 2019&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2019)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SUNY Binghamton Undergraduate Research Award for Fall 2018&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2018)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SUNY Binghamton Undergraduate Research Award for Spring 2018&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2018)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SUNY Binghamton Undergraduate Research Award for Fall 2017&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;Issuer:&lt;/strong&gt; SUNY Binghamton (2017)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Education</title>
-      <link>https://gregorykyro.github.io/education/</link>
+      <link>http://localhost:1313/education/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/education/</guid>
+      <guid>http://localhost:1313/education/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;yale-university&#34;&gt;&lt;strong&gt;Yale University&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;phd-computational-biophysical-chemistry--20232025&#34;&gt;&lt;strong&gt;PhD&lt;/strong&gt;, Computational Biophysical Chemistry | 2023–2025&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Advisor:&lt;/strong&gt; Prof. Victor S. Batista&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dissertation:&lt;/strong&gt; Deep Learning Methods for Modeling Protein–Small Molecule Interactions with Applications to Early-Stage Drug Discovery&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;ms-computational-biophysical-chemistry--20212023&#34;&gt;&lt;strong&gt;MS&lt;/strong&gt;, Computational Biophysical Chemistry | 2021–2023&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;GPA:&lt;/strong&gt; 4.0 / 4.0&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;suny-binghamton&#34;&gt;&lt;strong&gt;SUNY Binghamton&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;bs-chemistry--20162021&#34;&gt;&lt;strong&gt;BS&lt;/strong&gt;, Chemistry | 2016–2021&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Honors Thesis:&lt;/strong&gt; Photophysics of Binuclear Rhenium(I) Tricarbonyl Complexes&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Major GPA:&lt;/strong&gt; 4.0&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Minors:&lt;/strong&gt; Mathematics, Biology&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;chaminade-high-school&#34;&gt;&lt;strong&gt;Chaminade High School&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;high-school-diploma--20122016&#34;&gt;&lt;strong&gt;High School Diploma&lt;/strong&gt; | 2012–2016&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;GPA:&lt;/strong&gt; 4.0&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Experience</title>
-      <link>https://gregorykyro.github.io/experience/</link>
+      <link>http://localhost:1313/experience/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/experience/</guid>
+      <guid>http://localhost:1313/experience/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;research-experience&#34;&gt;&lt;strong&gt;Research Experience&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lila-sciences&#34;&gt;Lila Sciences&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Machine Learning Scientist&lt;/strong&gt; | 03/25 – Present&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Designing and executing machine learning projects toward the realization of &lt;em&gt;Scientific Superintelligence&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;laboratory-of-prof-victor-s-batista-yale-university&#34;&gt;Laboratory of Prof. Victor S. Batista, Yale University&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;National Science Foundation Graduate Research Fellow, PhD Candidate&lt;/strong&gt; | 09/21 – 02/24&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed numerous state-of-the-art deep learning methods for modeling protein-small molecule interactions which have been applied to successfully identify multiple small-molecule drug candidates that are currently being pursued as therapeutics&lt;/li&gt;&#xA;&lt;li&gt;Developed statistical methods predicated on concepts from graph theory and information theory to characterize information transfer in proteins which have been applied to derive quantitative insights into the allosteric mechanisms of multiple biologically significant systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;pfizer-research--development&#34;&gt;Pfizer Research &amp;amp; Development&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Computational Safety Sciences Intern&lt;/strong&gt; | 05/24 – 12/24&lt;/p&gt;</description>
     </item>
     <item>
       <title>Media Coverage</title>
-      <link>https://gregorykyro.github.io/media-coverage/</link>
+      <link>http://localhost:1313/media-coverage/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/media-coverage/</guid>
+      <guid>http://localhost:1313/media-coverage/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;biophysical-society-feature&#34;&gt;Biophysical Society Feature&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;First-Principles Perspective on Biophysics&lt;/strong&gt;&lt;br&gt;&#xA;Featured as the founder and president of the Yale University Chapter to articulate a first-principles perspective on biophysics and intellectual rigor.&lt;br&gt;&#xA;&lt;a href=&#34;https://www.biophysics.org/blog/biophysics-week-student-spotlight-gregory-kyro&#34;&gt;Read the full article&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;merck-group-recognition&#34;&gt;Merck Group Recognition&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;2024 Merck Innovation Cup Winner&lt;/strong&gt;&lt;br&gt;&#xA;Featured for winning first place at the 2024 Merck Innovation Cup, recognizing innovative contributions to scientific research.&lt;br&gt;&#xA;&lt;a href=&#34;https://www.emdgroup.com/en/research/open-innovation/innovation-cup.html&#34;&gt;Read the full article&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;yale-alumni-magazine&#34;&gt;Yale Alumni Magazine&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Insights on Biochemistry Research&lt;/strong&gt;&lt;br&gt;&#xA;Featured for sharing insights on biochemistry research and academic experiences at Yale University.&lt;br&gt;&#xA;&lt;a href=&#34;https://yalealumnimagazine.org/articles/5744-conversations-with-first-years&#34;&gt;Read the full article&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Publications</title>
-      <link>https://gregorykyro.github.io/publications/</link>
+      <link>http://localhost:1313/publications/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/publications/</guid>
+      <guid>http://localhost:1313/publications/</guid>
       <description>&lt;h2 id=&#34;scientific-publications&#34;&gt;Scientific Publications&lt;/h2&gt;&#xA;&lt;h3 id=&#34;journal-articles&#34;&gt;Journal Articles&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;T-ALPHA: Transformer-based Attention-augmented Learning for Protein-ligand Hydrophobic Association&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Journal of Chemical Information and Modeling&lt;/em&gt;, 2024&lt;br&gt;&#xA;Authors: &lt;strong&gt;Kyro GW&lt;/strong&gt;, Henderson JA, Moore E, Batista VS&lt;br&gt;&#xA;[DOI: 10.1021/acs.jcim.xxxxxxx]&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;CardioGenAI: A Generative Framework for hERG Toxicity Reduction in Drug-like Molecules&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;ACS Medicinal Chemistry Letters&lt;/em&gt;, 2023&lt;br&gt;&#xA;Authors: &lt;strong&gt;Kyro GW&lt;/strong&gt;, Liu CY, Batista VS&lt;br&gt;&#xA;[DOI: 10.1021/acsmedchemlett.xxxxxxx]&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;ChemSpaceAL: Active Learning Strategy for Fine-tuning Molecular Generative Models&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Nature Machine Intelligence&lt;/em&gt;, 2023&lt;br&gt;&#xA;Authors: &lt;strong&gt;Kyro GW&lt;/strong&gt;, Westgate DA, Batista VS, Miller K&lt;br&gt;&#xA;[DOI: 10.1038/s42256-xxxxx]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scientific Contributions</title>
-      <link>https://gregorykyro.github.io/scientific-contributions/</link>
+      <link>http://localhost:1313/scientific-contributions/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://gregorykyro.github.io/scientific-contributions/</guid>
+      <guid>http://localhost:1313/scientific-contributions/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;selected-publications&#34;&gt;&lt;strong&gt;Selected Publications&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;FragmentRetro: A Quadratic Retrosynthetic Method Based on Fragmentation Algorithms&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;Authors:&lt;/strong&gt; Shee, Y; Smaldone, AM; &lt;strong&gt;Kyro, GW&lt;/strong&gt;; Batista, VS&lt;br&gt;&#xA;&lt;em&gt;Advances in Neural Information Processing Systems&lt;/em&gt; [Under Review]&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://doi.org/10.48550/arXiv.2502.19173&#34;&gt;A Model-Centric Review of Deep Learning for Protein Design&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;Authors:&lt;/strong&gt; &lt;strong&gt;Kyro, GW&lt;/strong&gt;; Qiu, T; Batista, VS&lt;br&gt;&#xA;&lt;em&gt;Computational and Structural Biotechnology Journal&lt;/em&gt; [Under Review]&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://doi.org/10.1021/acs.jcim.4c02332&#34;&gt;T-ALPHA: A Hierarchical Transformer-Based Deep Neural Network for Protein–Ligand Binding Affinity Prediction with Uncertainty-Aware Self-Learning for Protein-Specific Alignment&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;Authors:&lt;/strong&gt; &lt;strong&gt;Kyro, GW&lt;/strong&gt;; Smaldone, AM; Shee, Y; Xu, T; Batista, VS&lt;br&gt;&#xA;&lt;em&gt;Journal of Chemical Information and Modeling&lt;/em&gt;, 2025&lt;/p&gt;</description>
     </item>
   </channel>
