@@ -559,33 +559,49 @@
         }
         
         @media (max-width: 768px) {
+            body, html {
+                font-size: 0.85rem;
+            }
+        
             .header {
+                padding: 1rem;
                 flex-direction: column;
-                align-items: flex-start;
                 gap: 1rem;
             }
-            
+        
             .navigation {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto;
+                white-space: nowrap;
+                gap: 0.5rem;
+                justify-content: center;
                 width: 100%;
-                justify-content: space-between;
             }
-            
+        
+            .nav-link {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+                white-space: nowrap;
+            }
+        
             h1 {
                 font-size: 2rem;
             }
-            
+        
             h2 {
                 font-size: 1.5rem;
             }
-            
+        
             h3 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
-            
+        
             .footer-links {
                 flex-wrap: wrap;
             }
-            
+        
             .project-grid {
                 grid-template-columns: 1fr;
             }
