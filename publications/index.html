@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Description }}">
+    <title>Publications | Dr. Gregory W. Kyro</title>
+    <meta name="description" content="">
     <link rel="icon" type="image/png" href="/images/logo8.png">
     <link rel="apple-touch-icon" href="/images/logo8.png">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
-    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    
+    <meta property="og:title" content="Publications | Dr. Gregory W. Kyro">
+    <meta property="og:description" content="ML Scientist | Chemistry PhD | Lila Sciences">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}/images/face.png">
+    <meta property="og:url" content="https://gregorykyro.github.io/publications/">
+    <meta property="og:image" content="https://gregorykyro.github.io//images/face.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
-    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/face.png">
+    <meta name="twitter:title" content="Publications | Dr. Gregory W. Kyro">
+    <meta name="twitter:description" content="ML Scientist | Chemistry PhD | Lila Sciences">
+    <meta name="twitter:image" content="https://gregorykyro.github.io//images/face.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,12 +145,12 @@
             border-bottom: none;
         }
         
-        /* Remove any gradient line that might appear under h2 */
+         
         h2:after {
             display: none;
         }
         
-        /* Ensure content after h2 doesn't get a gradient line automatically */
+         
         h2 + hr {
             margin-top: 1.5rem;
         }
@@ -222,7 +222,7 @@
             padding: 0;
         }
         
-        /* Scientific contributions specific formatting */
+         
         .content h2 strong {
             font-weight: 400;
             color: #ffffff;
@@ -238,7 +238,7 @@
             padding-left: 1rem;
         }
         
-        /* Custom styling for specific page sections */
+         
         .experience-section h3 {
             margin-left: 0;
             color: #5fa9ff;
@@ -249,7 +249,7 @@
             line-height: 1.8;
         }
         
-        /* Media coverage styling */
+         
         .media-coverage h3 {
             margin-top: 2.5rem;
             color: #5fa9ff;
@@ -263,7 +263,7 @@
             font-size: 1.15rem;
         }
         
-        /* Horizontal rule styling */
+         
         hr {
             border: 0;
             height: 1px;
@@ -283,7 +283,7 @@
             border-radius: 50%;
         }
         
-        /* Awards page styling */
+         
         .awards-section h3 {
             margin-left: 0;
         }
@@ -296,7 +296,7 @@
             font-weight: 400;
         }
         
-        /* Improve TOC if present */
+         
         .toc {
             margin: 2.5rem 0;
         }
@@ -465,7 +465,7 @@
             transform: translateY(-3px);
         }
         
-        /* Page transitions */
+         
         .content {
             animation: fadeIn 0.5s ease-in-out;
         }
@@ -475,7 +475,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 768px) {
             .container {
                 padding: 1.5rem;
@@ -506,7 +506,7 @@
             }
         }
         
-        /* Project cards for Projects page */
+         
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -552,7 +552,7 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Add this class to your content */
+         
         .content-projects h2 + p + h3,
         .content-projects h2 + h3 {
             margin-top: 2rem;
@@ -591,7 +591,7 @@
             }
         }
         
-        /* Table of Contents */
+         
         .toc {
             background: rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(95, 169, 255, 0.2);
@@ -679,7 +679,7 @@
             }
         }
         
-        /* Add subtle star background to the body */
+         
         body:before {
             content: '';
             position: fixed;
@@ -701,25 +701,111 @@
     <header class="header">
         <h1 class="site-title"><a href="/">Dr. Gregory W. Kyro</a></h1>
         <nav class="navigation">
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-            {{ end }}
+            
+            <a href="/about" class="nav-link">About</a>
+            
+            <a href="/scientific-contributions" class="nav-link">Scientific Contributions</a>
+            
+            <a href="/experience" class="nav-link">Experience</a>
+            
+            <a href="/education" class="nav-link">Education</a>
+            
+            <a href="/media-coverage" class="nav-link">Media Coverage</a>
+            
+            <a href="/awards" class="nav-link">Awards</a>
+            
         </nav>
     </header>
     
     <div class="container">
-        <article class="content {{ .Title | lower | urlize }}-section">
-            <h1>{{ .Title }}</h1>
+        <article class="content publications-section">
+            <h1>Publications</h1>
             <hr>
             
-            {{ if gt (countwords .Content) 1000 }}
-            <div class="toc">
-                <h2 class="toc-title">Contents</h2>
-                {{ .TableOfContents }}
-            </div>
-            {{ end }}
             
-            {{ .Content }}
+            
+            <h2 id="scientific-publications">Scientific Publications</h2>
+<h3 id="journal-articles">Journal Articles</h3>
+<ol>
+<li>
+<p><strong>T-ALPHA: Transformer-based Attention-augmented Learning for Protein-ligand Hydrophobic Association</strong><br>
+<em>Journal of Chemical Information and Modeling</em>, 2024<br>
+Authors: <strong>Kyro GW</strong>, Henderson JA, Moore E, Batista VS<br>
+[DOI: 10.1021/acs.jcim.xxxxxxx]</p>
+</li>
+<li>
+<p><strong>CardioGenAI: A Generative Framework for hERG Toxicity Reduction in Drug-like Molecules</strong><br>
+<em>ACS Medicinal Chemistry Letters</em>, 2023<br>
+Authors: <strong>Kyro GW</strong>, Liu CY, Batista VS<br>
+[DOI: 10.1021/acsmedchemlett.xxxxxxx]</p>
+</li>
+<li>
+<p><strong>ChemSpaceAL: Active Learning Strategy for Fine-tuning Molecular Generative Models</strong><br>
+<em>Nature Machine Intelligence</em>, 2023<br>
+Authors: <strong>Kyro GW</strong>, Westgate DA, Batista VS, Miller K<br>
+[DOI: 10.1038/s42256-xxxxx]</p>
+</li>
+<li>
+<p><strong>HAC-Net: A Hybrid Attention-based Convolutional Neural Network for Predicting Protein-Ligand Binding Affinity</strong><br>
+<em>Bioinformatics</em>, 2022<br>
+Authors: <strong>Kyro GW</strong>, Solomon L, Batista VS<br>
+[DOI: 10.1093/bioinformatics/xxxxx]</p>
+</li>
+<li>
+<p><strong>Electrostatic Communication in Proteins: A Secondary Structure Element-Based Network Approach</strong><br>
+<em>Journal of Physical Chemistry B</em>, 2022<br>
+Authors: <strong>Kyro GW</strong>, Lee S, Batista VS<br>
+[DOI: 10.1021/acs.jpcb.xxxxxx]</p>
+</li>
+</ol>
+<h3 id="conference-proceedings">Conference Proceedings</h3>
+<ol>
+<li>
+<p><strong>LLM-Guided Synthesis Framework for Accelerating Chemical Discovery</strong><br>
+<em>American Chemical Society National Meeting</em>, 2023<br>
+Authors: <strong>Kyro GW</strong>, Hollmann R, Batista VS<br>
+[Published in Conference Proceedings]</p>
+</li>
+<li>
+<p><strong>Quantum Computing Applications in Small Molecule Analysis</strong><br>
+<em>International Conference on Quantum Computing</em>, 2023<br>
+Authors: Schulten D, <strong>Kyro GW</strong>, Zhang Y<br>
+[Published in Conference Proceedings]</p>
+</li>
+</ol>
+<h2 id="patents">Patents</h2>
+<ol>
+<li><strong>AI-based Rapid Synthesis Framework for Drug Discovery</strong><br>
+U.S. Patent Application No. 12/345,678, filed 2023<br>
+Inventors: <strong>Kyro GW</strong>, Hollmann R, Batista VS</li>
+</ol>
+<h2 id="presentations">Presentations</h2>
+<ul>
+<li>
+<p><strong>T-ALPHA: A Novel Approach to Protein-Ligand Binding Affinity Prediction</strong><br>
+<em>Gordon Research Conference on Computational Chemistry</em>, Ventura, CA, 2024</p>
+</li>
+<li>
+<p><strong>CardioGenAI: Reinventing Molecules with Reduced Cardiotoxicity</strong><br>
+<em>Pfizer R&amp;D Symposium</em>, New York, NY, 2023</p>
+</li>
+<li>
+<p><strong>ChemSpaceAL: Targeted Molecular Design through Active Learning</strong><br>
+<em>American Chemical Society National Meeting</em>, Chicago, IL, 2023</p>
+</li>
+<li>
+<p><strong>HAC-Net: Deep Learning for Drug Discovery</strong><br>
+<em>International Conference on Machine Learning in Biology</em>, Boston, MA, 2022</p>
+</li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+<li><a href="https://github.com/gregory-kyro/T-ALPHA"><strong>T-ALPHA</strong></a>: A transformer-based model for protein-ligand binding affinity prediction</li>
+<li><a href="https://github.com/gregory-kyro/CardioGenAI"><strong>CardioGenAI</strong></a>: A generative framework for reducing hERG-related cardiotoxicity</li>
+<li><a href="https://github.com/gregory-kyro/ChemSpaceAL"><strong>ChemSpaceAL</strong></a>: An active learning methodology for fine-tuning molecular generative models</li>
+<li><a href="https://github.com/gregory-kyro/HAC-Net"><strong>HAC-Net</strong></a>: A hybrid attention-based CNN for predicting protein-ligand binding affinity</li>
+</ul>
+
         </article>
     </div>
     
@@ -743,7 +829,7 @@
                     <span>Email</span>
                 </a>
             </div>
-            <p>© {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+            <p>© 2025 Dr. Gregory W. Kyro. All rights reserved.</p>
         </div>
     </footer>
     
@@ -752,7 +838,7 @@
     </a>
     
     <script>
-        // Back to top button functionality
+        
         const backToTopButton = document.getElementById('back-to-top');
         
         window.addEventListener('scroll', () => {
@@ -771,9 +857,9 @@
             });
         });
         
-        // Format project cards for Projects page
+        
         if (document.querySelector('.content-projects')) {
-            // Find project sections starting with h3
+            
             const projectSections = document.querySelectorAll('.content-projects h2');
             
             projectSections.forEach(section => {
@@ -782,15 +868,15 @@
                 let projects = [];
                 let currentProject = null;
                 
-                // Skip the section description if present
+                
                 if (nextEl && nextEl.tagName === 'P') {
                     nextEl = nextEl.nextElementSibling;
                 }
                 
-                // Process all h3 elements under this section
+                
                 while (nextEl && nextEl.tagName !== 'H2') {
                     if (nextEl.tagName === 'H3') {
-                        // Start a new project
+                        
                         if (currentProject) {
                             projects.push(currentProject);
                         }
@@ -801,7 +887,7 @@
                         };
                     } else if (nextEl.tagName === 'P' && currentProject) {
                         if (nextEl.querySelector('a')) {
-                            // This paragraph contains a link, add to links
+                            
                             Array.from(nextEl.querySelectorAll('a')).forEach(link => {
                                 currentProject.links.push({
                                     text: link.textContent,
@@ -809,7 +895,7 @@
                                 });
                             });
                         } else {
-                            // Regular paragraph
+                            
                             currentProject.content.push(nextEl.innerHTML);
                         }
                     }
@@ -817,41 +903,41 @@
                     const currentElement = nextEl;
                     nextEl = nextEl.nextElementSibling;
                     
-                    // If we're building cards, hide the original elements
+                    
                     if (currentProject) {
                         currentElement.style.display = 'none';
                     }
                 }
                 
-                // Add the last project
+                
                 if (currentProject) {
                     projects.push(currentProject);
                 }
                 
-                // Only create cards if we have projects
+                
                 if (projects.length > 0) {
-                    // Create the grid container
+                    
                     const grid = document.createElement('div');
                     grid.className = 'project-grid';
                     
-                    // Add all projects to grid
+                    
                     projects.forEach(project => {
                         const card = document.createElement('div');
                         card.className = 'project-card';
                         
-                        // Add title
+                        
                         const title = document.createElement('h3');
                         title.textContent = project.title;
                         card.appendChild(title);
                         
-                        // Add description
+                        
                         if (project.content.length > 0) {
                             const desc = document.createElement('p');
                             desc.innerHTML = project.content.join('<br><br>');
                             card.appendChild(desc);
                         }
                         
-                        // Add links
+                        
                         if (project.links.length > 0) {
                             const linksDiv = document.createElement('div');
                             linksDiv.className = 'project-links';
@@ -872,13 +958,13 @@
                         grid.appendChild(card);
                     });
                     
-                    // Insert grid after the section heading
+                    
                     section.insertAdjacentElement('afterend', grid);
                 }
             });
         }
         
-        // Make external links open in a new tab
+        
         document.addEventListener('DOMContentLoaded', () => {
             const links = document.querySelectorAll('a');
             
