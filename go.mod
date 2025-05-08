@@ -1,4 +1,4 @@
-module github.com/gregory-kyro/gregorykyro.github.io
+module github.com/gregory-kyro/gregory-kyro.github.io
 
 go 1.24.3
 
