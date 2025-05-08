@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="generator" content="Hugo 0.147.2">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
+    <title>Dr. Gregory W. Kyro</title>
+    <meta name="description" content="ML Scientist | Chemistry PhD | Lila Sciences">
     <link rel="icon" type="image/png" href="/images/logo8.png">
     <link rel="apple-touch-icon" href="/images/logo8.png">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="{{ .Site.Title }}">
-    <meta property="og:description" content="{{ .Site.Params.description }}">
+    
+    <meta property="og:title" content="Dr. Gregory W. Kyro">
+    <meta property="og:description" content="ML Scientist | Chemistry PhD | Lila Sciences">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ .Site.BaseURL }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}/images/face.png">
+    <meta property="og:url" content="https://gregorykyro.github.io/">
+    <meta property="og:image" content="https://gregorykyro.github.io//images/face.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ .Site.Title }}">
-    <meta name="twitter:description" content="{{ .Site.Params.description }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/face.png">
+    <meta name="twitter:title" content="Dr. Gregory W. Kyro">
+    <meta name="twitter:description" content="ML Scientist | Chemistry PhD | Lila Sciences">
+    <meta name="twitter:image" content="https://gregorykyro.github.io//images/face.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,9 +198,19 @@
         </p>
         
         <div class="links">
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="link">{{ .Name }}</a>
-            {{ end }}
+            
+            <a href="/about" class="link">About</a>
+            
+            <a href="/scientific-contributions" class="link">Scientific Contributions</a>
+            
+            <a href="/experience" class="link">Experience</a>
+            
+            <a href="/education" class="link">Education</a>
+            
+            <a href="/media-coverage" class="link">Media Coverage</a>
+            
+            <a href="/awards" class="link">Awards</a>
+            
         </div>
         
         <div class="social-links">
@@ -222,16 +233,16 @@
         const canvas = document.getElementById('neural-network');
         const ctx = canvas.getContext('2d');
         
-        // Function to ensure canvas covers entire window
+        
         function setCanvasDimensions() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         }
         
-        // Set initial dimensions
+        
         setCanvasDimensions();
         
-        // Configuration
+        
         const nodes = [];
         const connections = [];
         const nodeCount = 150;
@@ -240,11 +251,11 @@
         const nodeColor = 'rgba(95, 169, 255, 0.7)';
         const connectionColor = 'rgba(95, 169, 255, 0.15)';
         
-        // Function to distribute nodes across the entire viewport
+        
         function initializeNodes() {
             nodes.length = 0;
             
-            // Distribute nodes to ensure even coverage
+            
             for (let i = 0; i < nodeCount; i++) {
                 nodes.push({
                     x: Math.random() * canvas.width,
@@ -255,35 +266,35 @@
             }
         }
         
-        // Initialize nodes
+        
         initializeNodes();
         
-        // Animation loop
+        
         function animate() {
             requestAnimationFrame(animate);
             
-            // Clear canvas
+            
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
-            // Update node positions
+            
             nodes.forEach(node => {
                 node.x += node.vx;
                 node.y += node.vy;
                 
-                // Bounce off edges with wrapping for smoother transitions
+                
                 if (node.x < 0) node.x = canvas.width;
                 if (node.x > canvas.width) node.x = 0;
                 if (node.y < 0) node.y = canvas.height;
                 if (node.y > canvas.height) node.y = 0;
                 
-                // Draw nodes
+                
                 ctx.beginPath();
                 ctx.arc(node.x, node.y, nodeSize, 0, Math.PI * 2);
                 ctx.fillStyle = nodeColor;
                 ctx.fill();
             });
             
-            // Draw connections
+            
             for (let i = 0; i < nodes.length; i++) {
                 for (let j = i + 1; j < nodes.length; j++) {
                     const dx = nodes[i].x - nodes[j].x;
@@ -302,13 +313,13 @@
             }
         }
         
-        // Handle window resize - completely redraw the nodes
+        
         window.addEventListener('resize', () => {
             setCanvasDimensions();
             initializeNodes();
         });
         
-        // Start animation
+        
         animate();
     </script>
 </body>
