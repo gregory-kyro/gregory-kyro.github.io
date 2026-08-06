@@ -293,6 +293,9 @@ hr {
     letter-spacing: -0.014em;
 }
 
+/* Space between narrative chapters once headings are removed */
+.about-section details.disclosure + p { margin-top: 2.4rem; }
+
 .experience-section h3,
 .awards-section h3,
 .recognition-section h3,
