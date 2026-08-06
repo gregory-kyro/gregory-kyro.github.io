@@ -35,9 +35,10 @@
     "#gwk-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--gwk-line);}",
     "#gwk-head .gwk-title{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:var(--gwk-fg);}",
     "#gwk-head .gwk-dot{width:7px;height:7px;border-radius:50%;background:var(--gwk-accent);box-shadow:0 0 10px var(--gwk-accent);}",
-    "#gwk-close{appearance:none;background:transparent;border:0;color:var(--gwk-muted);cursor:pointer;font-size:20px;line-height:1;padding:4px;border-radius:8px;transition:color .2s ease,background .2s ease;}",
+    "#gwk-close{appearance:none;background:transparent;border:0;color:var(--gwk-muted);cursor:pointer;line-height:1;padding:6px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;transition:color .2s ease,background .2s ease;}",
     "#gwk-close:hover{color:var(--gwk-fg);background:rgba(255,255,255,.06);}",
     "#gwk-msgs{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth;}",
+    "#gwk-msgs.gwk-empty{justify-content:center;}",
     "#gwk-msgs::-webkit-scrollbar{width:8px;}#gwk-msgs::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:8px;}",
     ".gwk-msg{max-width:85%;font-size:14px;line-height:1.55;letter-spacing:-.01em;white-space:pre-wrap;word-wrap:break-word;}",
     ".gwk-msg.gwk-a{align-self:flex-start;color:var(--gwk-fg);}",
@@ -74,7 +75,9 @@
     '<span class="gwk-dot"></span><span>Ask</span></button>' +
     '<section id="gwk-panel" role="dialog" aria-modal="false" aria-label="Chat with Greg\'s AI assistant">' +
     '<header id="gwk-head"><span class="gwk-title"><span class="gwk-dot"></span>Ask about Greg</span>' +
-    '<button id="gwk-close" aria-label="Close chat">\u00d7</button></header>' +
+    '<button id="gwk-close" aria-label="Minimize chat" title="Minimize">' +
+    '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>' +
+    "</button></header>" +
     '<div id="gwk-msgs" aria-live="polite"></div>' +
     '<form id="gwk-form">' +
     '<textarea id="gwk-input" rows="1" placeholder="Ask anything about Greg\u2026" autocomplete="off"></textarea>' +
@@ -116,6 +119,7 @@
   function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
 
   function addMsg(role, text) {
+    msgs.classList.remove("gwk-empty");
     var el = document.createElement("div");
     el.className = "gwk-msg " + (role === "user" ? "gwk-u" : "gwk-a");
     el.innerHTML = role === "user" ? esc(text) : render(text);
@@ -137,6 +141,7 @@
       }).join("") +
       "</div>";
     msgs.appendChild(wrap);
+    msgs.classList.add("gwk-empty");
     wrap.querySelectorAll(".gwk-chip").forEach(function (chip) {
       chip.addEventListener("click", function () {
         input.value = chip.textContent;
