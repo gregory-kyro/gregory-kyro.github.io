@@ -34,6 +34,7 @@
     "#gwk-panel.gwk-open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}",
     "#gwk-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--gwk-line);}",
     "#gwk-head .gwk-title{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:var(--gwk-fg);}",
+    "#gwk-head .gwk-sub{margin-left:-4px;font-size:12px;font-weight:450;color:var(--gwk-muted);letter-spacing:-.01em;}",
     "#gwk-head .gwk-dot{width:7px;height:7px;border-radius:50%;background:var(--gwk-accent);box-shadow:0 0 10px var(--gwk-accent);}",
     "#gwk-close{appearance:none;background:transparent;border:0;color:var(--gwk-muted);cursor:pointer;line-height:1;padding:6px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;transition:color .2s ease,background .2s ease;}",
     "#gwk-close:hover{color:var(--gwk-fg);background:rgba(255,255,255,.06);}",
@@ -77,10 +78,10 @@
   var root = document.createElement("div");
   root.id = "gwk-chat-root";
   root.innerHTML =
-    '<button id="gwk-launch" aria-label="Open chat with Greg\'s digital twin">' +
-    '<span class="gwk-dot"></span><span>Ask</span></button>' +
-    '<section id="gwk-panel" role="dialog" aria-modal="false" aria-label="Chat with Greg\'s digital twin">' +
-    '<header id="gwk-head"><span class="gwk-title"><span class="gwk-dot"></span>Chat with Greg\u2019s digital twin</span>' +
+    '<button id="gwk-launch" aria-label="Open chat with AI Greg, Greg\'s digital twin">' +
+    '<span class="gwk-dot"></span><span>Chat</span></button>' +
+    '<section id="gwk-panel" role="dialog" aria-modal="false" aria-label="Chat with AI Greg, Greg\'s digital twin">' +
+    '<header id="gwk-head"><span class="gwk-title"><span class="gwk-dot"></span>AI Greg<span class="gwk-sub">digital twin</span></span>' +
     '<button id="gwk-close" aria-label="Minimize chat" title="Minimize">' +
     '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>' +
     "</button></header>" +
