@@ -15,13 +15,13 @@
   if (document.getElementById("gwk-chat-root")) return; // avoid double-init
 
   var SUGGESTIONS = [
-    "What is Greg building at Lila?",
-    "What's his most impactful research?",
-    "How can I reach him?"
+    "What are you building at Lila?",
+    "What's your most impactful research?",
+    "How can I reach you?"
   ];
 
   var GREETING =
-    "Hi \u2014 I'm Greg's AI assistant.";
+    "Hi \u2014 I'm AI Greg.";
 
   // ---------- styles ----------
   var css = [
@@ -55,11 +55,14 @@
     ".gwk-typing i:nth-child(2){animation-delay:.2s;}.gwk-typing i:nth-child(3){animation-delay:.4s;}",
     "@keyframes gwkblink{0%,80%,100%{opacity:.25;transform:translateY(0);}40%{opacity:1;transform:translateY(-2px);}}",
     "#gwk-form{display:flex;align-items:flex-end;gap:8px;padding:12px;border-top:1px solid var(--gwk-line);}",
-    "#gwk-input{flex:1;resize:none;max-height:120px;min-height:22px;background:transparent;border:0;outline:0;color:var(--gwk-fg);font:inherit;font-size:14px;line-height:1.5;letter-spacing:-.01em;padding:8px 6px;}",
+    "#gwk-input{flex:1;resize:none;max-height:120px;min-height:24px;background:rgba(255,255,255,.05);border:1px solid var(--gwk-line);border-radius:14px;outline:0;color:var(--gwk-fg);font:inherit;font-size:16px;line-height:1.4;letter-spacing:-.01em;padding:11px 14px;transition:border-color .2s ease,background .2s ease;}",
+    "#gwk-input:focus{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.08);}",
     "#gwk-input::placeholder{color:var(--gwk-muted);}",
     "#gwk-send{appearance:none;flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--gwk-line);background:var(--gwk-fg);color:var(--gwk-bg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:opacity .2s ease,transform .2s ease;}",
     "#gwk-send:hover{transform:scale(1.05);}#gwk-send:disabled{opacity:.35;cursor:default;transform:none;}",
     ".gwk-foot{padding:0 14px 10px;font-size:10.5px;color:var(--gwk-muted);text-align:center;letter-spacing:.01em;}",
+    ".gwk-foot a{color:var(--gwk-fg);text-decoration:underline;text-underline-offset:2px;}",
+    ".gwk-foot a:hover{color:var(--gwk-accent);}",
     "@media (max-width:520px){#gwk-panel{top:0;right:0;bottom:0;left:0;width:auto;height:auto;max-width:none;max-height:none;border-radius:0;}#gwk-head{padding-top:calc(16px + env(safe-area-inset-top));}#gwk-form{padding-bottom:calc(12px + env(safe-area-inset-bottom));}#gwk-launch{right:16px;bottom:16px;}}",
     "@media (prefers-reduced-motion:reduce){#gwk-panel,#gwk-launch{transition:none;}.gwk-typing i{animation:none;}}"
   ].join("");
@@ -73,20 +76,20 @@
   var root = document.createElement("div");
   root.id = "gwk-chat-root";
   root.innerHTML =
-    '<button id="gwk-launch" aria-label="Open chat with Greg\'s AI assistant">' +
+    '<button id="gwk-launch" aria-label="Open chat with Greg\'s digital twin">' +
     '<span class="gwk-dot"></span><span>Ask</span></button>' +
-    '<section id="gwk-panel" role="dialog" aria-modal="false" aria-label="Chat with Greg\'s AI assistant">' +
-    '<header id="gwk-head"><span class="gwk-title"><span class="gwk-dot"></span>Ask about Greg</span>' +
+    '<section id="gwk-panel" role="dialog" aria-modal="false" aria-label="Chat with Greg\'s digital twin">' +
+    '<header id="gwk-head"><span class="gwk-title"><span class="gwk-dot"></span>Chat with Greg\u2019s digital twin</span>' +
     '<button id="gwk-close" aria-label="Minimize chat" title="Minimize">' +
     '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>' +
     "</button></header>" +
     '<div id="gwk-msgs" aria-live="polite"></div>' +
     '<form id="gwk-form">' +
-    '<textarea id="gwk-input" rows="1" placeholder="Ask anything about Greg\u2026" autocomplete="off"></textarea>' +
+    '<textarea id="gwk-input" rows="1" placeholder="Ask me anything\u2026" autocomplete="off"></textarea>' +
     '<button id="gwk-send" type="submit" aria-label="Send message">' +
     '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11l5-5 5 5"/><path d="M12 6v12"/></svg>' +
     "</button></form>" +
-    '<div class="gwk-foot">AI can be imperfect \u00b7 verify important details</div>' +
+    '<div class="gwk-foot">To speak with human Greg, visit the <a href="/contact">contact page</a></div>' +
     "</section>";
   document.body.appendChild(root);
 
