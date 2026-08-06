@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Gregory W. Kyro, PhD</title>
+    <meta name="description" content="Get in touch with Gregory W. Kyro, PhD.">
+    <link rel="icon" type="image/png" href="https://gregorykyro.com/images/logo8.png">
+    <link rel="apple-touch-icon" href="https://gregorykyro.com/images/logo8.png">
+
+    <meta property="og:title" content="Contact | Gregory W. Kyro, PhD">
+    <meta property="og:description" content="ML Scientist | Chemistry PhD | Lila Sciences">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://gregorykyro.com/contact/">
+    <meta property="og:image" content="https://gregorykyro.com/images/gwk-headshot.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact | Gregory W. Kyro, PhD">
+    <meta name="twitter:description" content="ML Scientist | Chemistry PhD | Lila Sciences">
+    <meta name="twitter:image" content="https://gregorykyro.com/images/gwk-headshot.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://gregorykyro.com/contact/">
+
+    <style>
+        .contact-section { --c-line: rgba(255,255,255,.12); }
+        .contact-lead { color: var(--fg-soft, #c7c7cc); font-size: var(--fs-body, 1rem); line-height: 1.6; max-width: 46ch; }
+
+        .contact-grid { display: grid; gap: 1.1rem; margin-top: 2rem; }
+        .contact-card {
+            border: 1px solid var(--c-line);
+            border-radius: 16px;
+            padding: 1.4rem 1.5rem;
+            background: rgba(255,255,255,.02);
+        }
+        .contact-card h2 {
+            font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+            color: var(--fg-muted, #8a8a8f); margin: 0 0 1rem; font-weight: 600;
+        }
+
+        /* email row */
+        .email-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+        .email-row .addr { font-size: 1.05rem; color: var(--fg, #f5f5f7); letter-spacing: -.01em; }
+        .btn {
+            appearance: none; cursor: pointer; font: inherit; font-size: .9rem; font-weight: 500;
+            border: 1px solid var(--c-line); background: rgba(255,255,255,.04); color: var(--fg, #f5f5f7);
+            padding: .55rem 1.1rem; border-radius: 999px; transition: background .2s ease, border-color .2s ease, transform .2s ease;
+            display: inline-flex; align-items: center; gap: .5rem; text-decoration: none;
+        }
+        .btn:hover { background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.28); transform: translateY(-1px); }
+        .btn-primary { background: var(--fg, #f5f5f7); color: var(--bg, #000); border-color: transparent; }
+        .btn-primary:hover { background: #fff; }
+        .btn[disabled] { opacity: .5; cursor: default; transform: none; }
+
+        /* forms */
+        .field { display: flex; flex-direction: column; gap: .4rem; margin-bottom: .9rem; }
+        .field label { font-size: .78rem; color: var(--fg-muted, #8a8a8f); letter-spacing: .02em; }
+        .field input, .field textarea {
+            width: 100%; box-sizing: border-box; font: inherit; font-size: .95rem;
+            color: var(--fg, #f5f5f7); background: rgba(255,255,255,.03);
+            border: 1px solid var(--c-line); border-radius: 10px; padding: .7rem .85rem;
+            transition: border-color .2s ease, background .2s ease;
+        }
+        .field input:focus, .field textarea:focus { outline: none; border-color: rgba(255,255,255,.35); background: rgba(255,255,255,.06); }
+        .field textarea { resize: vertical; min-height: 96px; }
+        .form-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: .2rem; }
+        .form-note { font-size: .8rem; color: var(--fg-muted, #8a8a8f); line-height: 1.5; }
+        .status { font-size: .88rem; margin-top: .8rem; line-height: 1.5; min-height: 1.2em; }
+        .status.ok { color: #7fd88f; }
+        .status.err { color: #ff8a80; }
+        .cf-turnstile { margin: .2rem 0 .4rem; }
+        .actions-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+    </style>
+</head>
+<body>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <header class="header">
+        <h1 class="site-title"><a href="/">Gregory W. Kyro, PhD</a></h1>
+        <nav class="navigation">
+            <a href="/about" class="nav-link">About</a>
+            <a href="/research" class="nav-link">Research</a>
+            <a href="/experience" class="nav-link">Experience</a>
+            <a href="/education" class="nav-link">Education</a>
+            <a href="/recognition" class="nav-link">Recognition</a>
+            <a href="/contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article class="content contact-section">
+            <h1>Contact</h1>
+            <hr>
+            <p class="contact-lead">The best way to reach Greg is below. Messages go straight to his inbox — no app required.</p>
+
+            <div class="contact-grid">
+
+                <!-- Email -->
+                <div class="contact-card">
+                    <h2>Email</h2>
+                    <div class="email-row">
+                        <span class="addr" id="email-addr">gregorykyro@gmail.com</span>
+                        <div class="actions-row">
+                            <button class="btn" id="copy-email" type="button"><i class="far fa-copy"></i><span>Copy</span></button>
+                            <a class="btn" id="vcard-btn" href="/gwk.vcf" download><i class="far fa-address-card"></i><span>Save contact</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message form -->
+                <div class="contact-card">
+                    <h2>Send a message</h2>
+                    <form id="message-form" novalidate>
+                        <div class="field">
+                            <label for="m-name">Name</label>
+                            <input id="m-name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="m-email">Your email</label>
+                            <input id="m-email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="m-message">Message</label>
+                            <textarea id="m-message" name="message" required></textarea>
+                        </div>
+                        <div class="cf-turnstile" data-form="message"></div>
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit"><i class="far fa-paper-plane"></i><span>Send</span></button>
+                        </div>
+                        <div class="status" id="message-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+
+                <!-- Request a call -->
+                <div class="contact-card">
+                    <h2>Request a call</h2>
+                    <p class="form-note" style="margin-bottom:1rem;">Prefer to talk? Tell Greg who you are and why. If he approves, you'll receive a secure link with his number.</p>
+                    <form id="phone-form" novalidate>
+                        <div class="field">
+                            <label for="p-name">Name</label>
+                            <input id="p-name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="p-email">Your email</label>
+                            <input id="p-email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="p-reason">Reason for the request</label>
+                            <textarea id="p-reason" name="reason" required></textarea>
+                        </div>
+                        <div class="cf-turnstile" data-form="phone"></div>
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit"><i class="far fa-comment-dots"></i><span>Send request</span></button>
+                        </div>
+                        <div class="status" id="phone-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/gregory-kyro" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a>
+                <a href="https://www.linkedin.com/in/gregory-kyro/" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                <a href="https://x.com/gregory_kyro" class="social-link" title="X" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-x-twitter"></i><span>X</span></a>
+                <a href="https://scholar.google.com/citations?user=ctrKOacAAAAJ" class="social-link" title="Google Scholar" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i><span>Scholar</span></a>
+                <a href="/contact" class="social-link" title="Contact" aria-label="Contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+            </div>
+            <p>© 2026 Gregory W. Kyro, PhD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // ---- config ----
+        var CONTACT_API = "https://gwk-chat.bibleverse.workers.dev";
+        var TURNSTILE_SITE_KEY = ""; // paste your Cloudflare Turnstile SITE key to enable spam protection
+
+        // back-to-top
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) btt.classList.add('visible'); else btt.classList.remove('visible');
+        });
+        btt.addEventListener('click', function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        // copy email
+        var copyBtn = document.getElementById('copy-email');
+        copyBtn.addEventListener('click', function () {
+            var addr = document.getElementById('email-addr').textContent.trim();
+            var done = function () {
+                var label = copyBtn.querySelector('span');
+                var prev = label.textContent;
+                label.textContent = 'Copied';
+                copyBtn.querySelector('i').className = 'fas fa-check';
+                setTimeout(function () { label.textContent = prev; copyBtn.querySelector('i').className = 'far fa-copy'; }, 1600);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(addr).then(done).catch(done);
+            } else {
+                var t = document.createElement('textarea'); t.value = addr; document.body.appendChild(t); t.select();
+                try { document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(t); done();
+            }
+        });
+
+        // turnstile tokens per form (populated by callback if enabled)
+        var tsTokens = { message: "", phone: "" };
+        function tsToken(form) { return tsTokens[form] || ""; }
+        window.gwkTs = function (form) {
+            return function (token) { tsTokens[form] = token; };
+        };
+        // render turnstile widgets if a site key is configured
+        (function () {
+            if (!TURNSTILE_SITE_KEY) return;
+            var s = document.createElement('script');
+            s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+            s.async = true; s.defer = true;
+            s.onload = function () {
+                document.querySelectorAll('.cf-turnstile').forEach(function (el) {
+                    var form = el.getAttribute('data-form');
+                    window.turnstile.render(el, {
+                        sitekey: TURNSTILE_SITE_KEY,
+                        theme: 'dark',
+                        callback: function (token) { tsTokens[form] = token; }
+                    });
+                });
+            };
+            document.head.appendChild(s);
+        })();
+
+        function setStatus(el, msg, ok) {
+            el.textContent = msg;
+            el.className = 'status ' + (ok ? 'ok' : 'err');
+        }
+
+        function handle(formId, endpoint, statusId, fields, formName, successMsg) {
+            var form = document.getElementById(formId);
+            var status = document.getElementById(statusId);
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var payload = {};
+                var valid = true;
+                fields.forEach(function (f) {
+                    var v = (form.elements[f] && form.elements[f].value || '').trim();
+                    if (!v) valid = false;
+                    payload[f] = v;
+                });
+                if (!valid) { setStatus(status, 'Please fill in all fields.', false); return; }
+                if (payload.email && payload.email.indexOf('@') === -1) { setStatus(status, 'Please enter a valid email.', false); return; }
+                if (TURNSTILE_SITE_KEY && !tsToken(formName)) { setStatus(status, 'Please complete the spam check.', false); return; }
+                payload.turnstileToken = tsToken(formName);
+
+                var btn = form.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                setStatus(status, 'Sending…', true);
+                fetch(CONTACT_API + endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).then(function (r) {
+                    return r.text().then(function (t) { return { ok: r.ok, t: t }; });
+                }).then(function (res) {
+                    if (res.ok) {
+                        setStatus(status, successMsg, true);
+                        form.reset();
+                        if (window.turnstile) { try { window.turnstile.reset(); } catch (e) {} }
+                        tsTokens[formName] = "";
+                    } else {
+                        setStatus(status, res.t || 'Something went wrong. Please try again or email directly.', false);
+                    }
+                }).catch(function () {
+                    setStatus(status, 'Network error. Please try again or email directly.', false);
+                }).then(function () { btn.disabled = false; });
+            });
+        }
+
+        handle('message-form', '/api/contact', 'message-status', ['name', 'email', 'message'], 'message',
+            'Thanks — your message was sent. You\u2019ll get a confirmation shortly.');
+        handle('phone-form', '/api/request-phone', 'phone-status', ['name', 'email', 'reason'], 'phone',
+            'Request sent. If Greg approves, you\u2019ll receive a secure link with his number by email.');
+    </script>
+    <script src="/js/chat.js" defer></script>
+</body>
+</html>
