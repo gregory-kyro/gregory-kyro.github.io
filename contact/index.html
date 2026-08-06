@@ -106,30 +106,6 @@
                     </div>
                 </div>
 
-                <!-- Message form -->
-                <div class="contact-card">
-                    <h2>Send a message</h2>
-                    <form id="message-form" novalidate>
-                        <div class="field">
-                            <label for="m-name">Name</label>
-                            <input id="m-name" name="name" type="text" autocomplete="name" required>
-                        </div>
-                        <div class="field">
-                            <label for="m-email">Your email</label>
-                            <input id="m-email" name="email" type="email" autocomplete="email" required>
-                        </div>
-                        <div class="field">
-                            <label for="m-message">Message</label>
-                            <textarea id="m-message" name="message" required></textarea>
-                        </div>
-                        <div class="cf-turnstile" data-form="message"></div>
-                        <div class="form-actions">
-                            <button class="btn btn-primary" type="submit"><i class="far fa-paper-plane"></i><span>Send</span></button>
-                        </div>
-                        <div class="status" id="message-status" role="status" aria-live="polite"></div>
-                    </form>
-                </div>
-
                 <!-- Request a call -->
                 <div class="contact-card">
                     <h2>Request a call</h2>
@@ -277,8 +253,6 @@
             });
         }
 
-        handle('message-form', '/api/contact', 'message-status', ['name', 'email', 'message'], 'message',
-            'Thanks — your message was sent. You\u2019ll get a confirmation shortly.');
         handle('phone-form', '/api/request-phone', 'phone-status', ['name', 'email', 'reason'], 'phone',
             'Request sent. If Greg approves, you\u2019ll receive a secure link with his number by email.');
     </script>
