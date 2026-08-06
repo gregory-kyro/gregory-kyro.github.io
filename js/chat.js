@@ -133,6 +133,8 @@
 
   function addMsg(role, text) {
     msgs.classList.remove("gwk-empty");
+    var intro = msgs.querySelector(".gwk-intro");
+    if (intro) intro.remove(); // greeting + example chips disappear once chatting
     var el = document.createElement("div");
     el.className = "gwk-msg " + (role === "user" ? "gwk-u" : "gwk-a");
     el.innerHTML = role === "user" ? esc(text) : render(text);
