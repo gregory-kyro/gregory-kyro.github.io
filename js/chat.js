@@ -121,6 +121,9 @@
       return '<a href="' + url + '"' + (external ? ' target="_blank" rel="noopener noreferrer"' : "") + ">" + label + "</a>";
     });
     h = h.replace(/(^|[\s(])((https?:\/\/)[^\s)]+)(?![^<]*<\/a>)/g, '$1<a href="$2" target="_blank" rel="noopener noreferrer">$2</a>');
+    // Safety net: linkify bare site paths (e.g. "/contact") the model wrote as
+    // plain text, so they render as clickable links instead of a raw path.
+    h = h.replace(/(^|[\s(])(\/(?:contact|research|about|experience|education|recognition))\b(?![^<]*<\/a>)/g, '$1<a href="$2">$2</a>');
     h = h.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     h = h.replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, "$1<em>$2</em>");
     return h;
