@@ -29,21 +29,25 @@
         .contact-section { --c-line: rgba(255,255,255,.12); }
         .contact-lead { color: var(--fg-soft, #c7c7cc); font-size: var(--fs-body, 1rem); line-height: 1.6; max-width: 46ch; }
 
-        .contact-grid { display: grid; gap: 1.1rem; margin-top: 2rem; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-top: 2rem; align-items: stretch; }
+        @media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
         .contact-card {
             border: 1px solid var(--c-line);
-            border-radius: 16px;
-            padding: 1.4rem 1.5rem;
+            border-radius: 18px;
+            padding: 1.8rem;
             background: rgba(255,255,255,.02);
+            display: flex; flex-direction: column; align-items: flex-start;
         }
         .contact-card h2 {
-            font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
-            color: var(--fg-muted, #8a8a8f); margin: 0 0 1rem; font-weight: 600;
+            font-size: .72rem; text-transform: uppercase; letter-spacing: .12em;
+            color: var(--fg-muted, #8a8a8f); margin: 0 0 1.1rem; font-weight: 600;
         }
-
-        /* email row */
-        .email-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-        .email-row .addr { font-size: 1.05rem; color: var(--fg, #f5f5f7); letter-spacing: -.01em; }
+        .card-value { font-size: 1.15rem; color: var(--fg, #f5f5f7); letter-spacing: -.01em; margin: 0 0 1.5rem; word-break: break-word; }
+        .card-value.masked { letter-spacing: .18em; color: var(--fg-soft, #c7c7cc); font-variant-numeric: tabular-nums; }
+        .card-actions { margin-top: auto; }
+        .reveal-form { width: 100%; margin-top: 1.4rem; animation: fadeIn .35s ease both; }
+        .reveal-form.hidden { display: none; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
         .btn {
             appearance: none; cursor: pointer; font: inherit; font-size: .9rem; font-weight: 500;
             border: 1px solid var(--c-line); background: rgba(255,255,255,.04); color: var(--fg, #f5f5f7);
@@ -100,17 +104,21 @@
                 <!-- Email -->
                 <div class="contact-card">
                     <h2>Email</h2>
-                    <div class="email-row">
-                        <span class="addr" id="email-addr">gregorykyro@gmail.com</span>
+                    <p class="card-value" id="email-addr">gregorykyro@gmail.com</p>
+                    <div class="card-actions">
                         <button class="btn" id="copy-email" type="button"><i class="far fa-copy"></i><span>Copy</span></button>
                     </div>
                 </div>
 
-                <!-- Request a call -->
+                <!-- Phone -->
                 <div class="contact-card">
-                    <h2>Request a call</h2>
-                    <p class="form-note" style="margin-bottom:1rem;">Prefer to talk? Tell Greg who you are and why. If he approves, you'll receive a secure link with his number.</p>
-                    <form id="phone-form" novalidate>
+                    <h2>Phone</h2>
+                    <p class="card-value masked" aria-label="Phone number available on request">+1 (•••) •••-••••</p>
+                    <div class="card-actions" id="phone-actions">
+                        <button class="btn btn-primary" id="req-toggle" type="button"><i class="fas fa-lock"></i><span>Request number</span></button>
+                    </div>
+                    <form id="phone-form" class="reveal-form hidden" novalidate>
+                        <p class="form-note" style="margin:0 0 1rem;">Tell Greg who you are and why. If he approves, you'll receive a secure link with his number.</p>
                         <div class="field">
                             <label for="p-name">Name</label>
                             <input id="p-name" name="name" type="text" autocomplete="name" required>
@@ -120,12 +128,12 @@
                             <input id="p-email" name="email" type="email" autocomplete="email" required>
                         </div>
                         <div class="field">
-                            <label for="p-reason">Reason for the request</label>
+                            <label for="p-reason">Reason</label>
                             <textarea id="p-reason" name="reason" required></textarea>
                         </div>
                         <div class="cf-turnstile" data-form="phone"></div>
                         <div class="form-actions">
-                            <button class="btn btn-primary" type="submit"><i class="far fa-comment-dots"></i><span>Send request</span></button>
+                            <button class="btn btn-primary" type="submit"><i class="far fa-paper-plane"></i><span>Send request</span></button>
                         </div>
                         <div class="status" id="phone-status" role="status" aria-live="polite"></div>
                     </form>
@@ -206,6 +214,19 @@
             };
             document.head.appendChild(s);
         })();
+
+        // reveal the request form when "Request number" is clicked
+        var reqToggle = document.getElementById('req-toggle');
+        if (reqToggle) {
+            reqToggle.addEventListener('click', function () {
+                var actions = document.getElementById('phone-actions');
+                if (actions) actions.style.display = 'none';
+                var f = document.getElementById('phone-form');
+                f.classList.remove('hidden');
+                var first = f.querySelector('input');
+                if (first) first.focus();
+            });
+        }
 
         function setStatus(el, msg, ok) {
             el.textContent = msg;
