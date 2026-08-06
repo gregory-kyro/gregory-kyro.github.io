@@ -17,7 +17,6 @@
   var SUGGESTIONS = [
     "What is Greg building at Lila?",
     "What's his most impactful research?",
-    "What makes Greg stand out?",
     "How can I reach him?"
   ];
 
