@@ -21,7 +21,7 @@
   ];
 
   var GREETING =
-    "Hi \u2014 I'm Greg's AI assistant. Ask me about his research, experience, or background.";
+    "Hi \u2014 I'm Greg's AI assistant.";
 
   // ---------- styles ----------
   var css = [
