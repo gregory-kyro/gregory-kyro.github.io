@@ -287,7 +287,7 @@ hr {
 /* --------------------------------------------------------------------- */
 
 .about-section p {
-    font-size: 1.05rem;
+    font-size: var(--fs-body);
     line-height: 1.6;
     color: var(--fg);
     letter-spacing: -0.012em;
@@ -409,7 +409,13 @@ details.disclosure > summary::before {
 details.disclosure[open] > summary::before { transform: rotate(45deg); }
 details.disclosure > summary:hover { color: var(--fg-soft); }
 details.disclosure > summary:hover::before { border-color: var(--fg-soft); }
-details.disclosure > ul { animation: fadeIn 0.45s ease both; margin-top: 0.7rem; }
+details.disclosure > ul {
+    animation: fadeIn 0.45s ease both;
+    margin-top: 0.7rem;
+    font-size: 0.92em;
+    color: var(--fg-soft);
+    letter-spacing: -0.008em;
+}
 
 /* --------------------------------------------------------------------- */
 /* Résumé-style entries (Experience / Education)                          */
@@ -683,7 +689,7 @@ a:focus-visible,
     .navigation::-webkit-scrollbar { display: none; }
     .nav-link { padding: 0.45rem 0.75rem; scroll-snap-align: center; }
 
-    .about-section p { font-size: 1.02rem; }
+    .about-section p { line-height: 1.6; }
 
     ul { padding-left: 1.15rem; }
 
