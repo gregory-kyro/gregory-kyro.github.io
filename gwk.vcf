@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Kyro;Gregory;W.;;PhD
+FN:Gregory W. Kyro, PhD
+TITLE:Scientist, AI Research
+ORG:Lila Sciences
+EMAIL;TYPE=INTERNET,PREF:gregorykyro@gmail.com
+URL:https://gregorykyro.com
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/gregory-kyro/
+URL;TYPE=GitHub:https://github.com/gregory-kyro
+URL;TYPE=Scholar:https://scholar.google.com/citations?user=ctrKOacAAAAJ
+NOTE:PhD, Computational Biophysical Chemistry, Yale University.
+END:VCARD
