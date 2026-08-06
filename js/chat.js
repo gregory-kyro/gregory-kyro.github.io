@@ -57,7 +57,7 @@
     ".gwk-typing i:nth-child(2){animation-delay:.2s;}.gwk-typing i:nth-child(3){animation-delay:.4s;}",
     "@keyframes gwkblink{0%,80%,100%{opacity:.25;transform:translateY(0);}40%{opacity:1;transform:translateY(-2px);}}",
     "#gwk-form{display:flex;align-items:flex-end;gap:8px;padding:12px;border-top:1px solid var(--gwk-line);}",
-    "#gwk-input{flex:1;resize:none;max-height:120px;min-height:24px;background:rgba(255,255,255,.05);border:1px solid var(--gwk-line);border-radius:14px;outline:0;color:var(--gwk-fg);font:inherit;font-size:16px;line-height:1.4;letter-spacing:-.01em;padding:11px 14px;transition:border-color .2s ease,background .2s ease;}",
+    "#gwk-input{flex:1;box-sizing:border-box;resize:none;max-height:120px;background:rgba(255,255,255,.05);border:1px solid var(--gwk-line);border-radius:14px;outline:0;color:var(--gwk-fg);font:inherit;font-size:16px;line-height:1.4;letter-spacing:-.01em;padding:10px 14px;transition:border-color .2s ease,background .2s ease;}",
     "#gwk-input:focus{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.08);}",
     "#gwk-input::placeholder{color:var(--gwk-muted);}",
     "#gwk-send{appearance:none;flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--gwk-line);background:var(--gwk-fg);color:var(--gwk-bg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:opacity .2s ease,transform .2s ease;}",
@@ -262,7 +262,9 @@
   });
   input.addEventListener("input", function () {
     input.style.height = "auto";
-    input.style.height = Math.min(input.scrollHeight, 120) + "px";
+    // +2 compensates the top+bottom border under box-sizing:border-box so a
+    // single line doesn't get clipped (which would force a phantom 2nd row).
+    input.style.height = Math.min(input.scrollHeight + 2, 120) + "px";
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && panel.classList.contains("gwk-open")) closePanel();
