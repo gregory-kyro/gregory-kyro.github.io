@@ -15,9 +15,10 @@
   if (document.getElementById("gwk-chat-root")) return; // avoid double-init
 
   var SUGGESTIONS = [
-    "What does Greg work on at Lila?",
-    "Summarize Greg's research",
-    "What's Greg's background?"
+    "What is Greg building at Lila?",
+    "What's his most impactful research?",
+    "What makes Greg stand out?",
+    "How can I reach him?"
   ];
 
   var GREETING =
