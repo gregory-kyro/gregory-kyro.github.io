@@ -441,26 +441,24 @@ details.disclosure > ul { animation: fadeIn 0.45s ease both; margin-top: 0.7rem;
 .entry ul { margin: 0.5rem 0 0; }
 .entry ul li { margin: 0.35rem 0; }
 
-/* Single-line rows: "Role · Org" left, date right */
-.line-list { list-style: none; padding-left: 0; margin: 0.9rem 0; }
+/* Single-line rows: "Role · Org" left, date pinned right (no separators) */
+.line-list { list-style: none; padding-left: 0; margin: 0.6rem 0; font-size: 0.94rem; letter-spacing: -0.01em; }
 .line-list li {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 0.15rem 1.25rem;
-    flex-wrap: wrap;
-    padding: 0.72rem 0;
+    gap: 1.25rem;
+    padding: 0.42rem 0;
     margin: 0;
-    border-bottom: 1px solid var(--hairline);
 }
-.line-list li:last-child { border-bottom: none; }
-.line-main { color: var(--fg-soft); min-width: 0; }
+.line-main { color: var(--fg-soft); flex: 1 1 auto; min-width: 0; }
 .line-main strong { color: var(--fg); font-weight: 600; }
-.line-sep { color: var(--fg-muted); margin: 0 0.15rem; }
+.line-sep { color: var(--fg-muted); margin: 0 0.32rem; }
 .line-date {
     color: var(--fg-muted);
     white-space: nowrap;
-    font-size: 0.9rem;
+    flex: 0 0 auto;
+    font-size: 0.85rem;
     font-variant-numeric: tabular-nums;
 }
 
