@@ -304,6 +304,17 @@ hr {
 .award-item { margin-bottom: 1.4rem; }
 .award-item strong { font-weight: 600; }
 
+/* Secondary label (e.g. "Issuer:", "Acquired by:") — underlined rather than
+   bold so it reads as a quiet field label and doesn't compete with the title. */
+.meta-label {
+    font-weight: 400;
+    color: var(--fg-soft);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.28);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
 .media-coverage-section h3,
 .media-coverage h3 {
     color: var(--fg);
