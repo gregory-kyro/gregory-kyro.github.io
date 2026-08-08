@@ -144,6 +144,39 @@
   }
   .subhead:first-of-type{margin-top:0.2rem;}
 
+  /* Contents: quick index of the sections that follow the Overview */
+  .cv-toc ol{
+    list-style:none;
+    margin:0.2rem 0 0;
+    padding:0;
+    columns:2;
+    column-gap:2.8rem;
+  }
+  .cv-toc li{
+    break-inside:avoid;
+    margin:0;
+    padding:0.24rem 0;
+  }
+  .cv-toc a.toc-row{
+    display:flex;
+    align-items:baseline;
+    gap:0.5rem;
+    font-size:0.92rem;
+    line-height:1.35;
+    color:var(--soft);
+    text-decoration:none;
+  }
+  .cv-toc a.toc-row:hover,
+  .cv-toc a.toc-row:hover .toc-pg{color:var(--accent);}
+  .cv-toc .toc-name{flex:1 1 auto;min-width:0;}
+  .cv-toc .toc-dots{
+    flex:1 1 auto;
+    border-bottom:1px dotted var(--line-strong);
+    transform:translateY(-0.18em);
+    min-width:0.8rem;
+  }
+  .cv-toc .toc-pg{flex:0 0 auto;color:var(--muted);font-variant-numeric:tabular-nums;}
+
   p{margin:0.65rem 0;color:var(--soft);}
   .cv-lead{color:var(--soft);margin:0.4rem 0 0.6rem;}
 
@@ -314,9 +347,38 @@
     </ul>
   </section>
 
+  <!-- ===== Contents ===== -->
+  <section class="cv-section cv-toc">
+    <h2 class="cv-h">Contents</h2>
+    <ol>
+      <li><a class="toc-row" href="#education"><span class="toc-name">Education</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Education">3</span></a></li>
+      <li><a class="toc-row" href="#research-experience"><span class="toc-name">Research Experience</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Research Experience">3</span></a></li>
+      <li><a class="toc-row" href="#innovations-acquired-by-pharma"><span class="toc-name">Innovations Acquired by Pharma</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Innovations Acquired by Pharma">4</span></a></li>
+      <li><a class="toc-row" href="#professional-leadership-experience"><span class="toc-name">Professional &amp; Leadership Experience</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Professional & Leadership Experience">4</span></a></li>
+      <li><a class="toc-row" href="#awards-scholarships-honors"><span class="toc-name">Awards, Scholarships, &amp; Honors</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Awards, Scholarships, & Honors">4</span></a></li>
+      <li><a class="toc-row" href="#selected-publications"><span class="toc-name">Selected Publications</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Publications">5</span></a></li>
+      <li><a class="toc-row" href="#selected-presentations-lectures"><span class="toc-name">Selected Presentations &amp; Lectures</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Presentations & Lectures">5</span></a></li>
+      <li><a class="toc-row" href="#teaching-experience"><span class="toc-name">Teaching Experience</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Teaching Experience">7</span></a></li>
+      <li><a class="toc-row" href="#scientific-peer-review-contributions"><span class="toc-name">Scientific Peer Review Contributions</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Scientific Peer Review Contributions">8</span></a></li>
+      <li><a class="toc-row" href="#media-coverage"><span class="toc-name">Media Coverage</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Media Coverage">8</span></a></li>
+      <li><a class="toc-row" href="#selected-research-mentees"><span class="toc-name">Selected Research Mentees</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Research Mentees">8</span></a></li>
+      <li><a class="toc-row" href="#selected-open-source-software"><span class="toc-name">Selected Open-Source Software</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Open-Source Software">9</span></a></li>
+      <li><a class="toc-row" href="#apps"><span class="toc-name">Apps</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Apps">9</span></a></li>
+      <li><a class="toc-row" href="#selected-professional-development"><span class="toc-name">Selected Professional Development</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Professional Development">9</span></a></li>
+      <li><a class="toc-row" href="#professional-memberships"><span class="toc-name">Professional Memberships</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Professional Memberships">9</span></a></li>
+      <li><a class="toc-row" href="#selected-phd-research-collaborations"><span class="toc-name">Selected PhD Research Collaborations</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected PhD Research Collaborations">10</span></a></li>
+      <li><a class="toc-row" href="#technical-skills"><span class="toc-name">Technical Skills</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Technical Skills">10</span></a></li>
+      <li><a class="toc-row" href="#foundational-skills"><span class="toc-name">Foundational Skills</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Foundational Skills">10</span></a></li>
+      <li><a class="toc-row" href="#selected-personal-achievements"><span class="toc-name">Selected Personal Achievements</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Personal Achievements">11</span></a></li>
+      <li><a class="toc-row" href="#volunteer-activities"><span class="toc-name">Volunteer Activities</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Volunteer Activities">11</span></a></li>
+      <li><a class="toc-row" href="#selected-coursework"><span class="toc-name">Selected Coursework</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Coursework">11</span></a></li>
+      <li><a class="toc-row" href="#references"><span class="toc-name">References</span><span class="toc-dots"></span><span class="toc-pg" data-sec="References">12</span></a></li>
+    </ol>
+  </section>
+
   <!-- ===== Education ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Education</h2>
+    <h2 class="cv-h" id="education">Education</h2>
     <div class="entry">
       <div class="entry-head"><span class="entry-org">Yale University</span></div>
       <div class="row"><span class="role">PhD, Computational Biophysical Chemistry</span><span class="r-date">05/23 – 02/25</span></div>
@@ -342,7 +404,7 @@
 
   <!-- ===== Research Experience ===== -->
   <section class="cv-section flow">
-    <h2 class="cv-h">Research Experience</h2>
+    <h2 class="cv-h" id="research-experience">Research Experience</h2>
     <div class="entry">
       <div class="entry-head"><span class="entry-org">Lila Sciences</span></div>
       <div class="row"><span class="role">Scientist II, AI Research</span><span class="r-date">02/26 – Present</span></div>
@@ -388,13 +450,13 @@
 
   <!-- ===== Innovations Acquired by Pharma ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Innovations Acquired by Pharma</h2>
+    <h2 class="cv-h" id="innovations-acquired-by-pharma">Innovations Acquired by Pharma</h2>
     <p class="kv"><b>SAGE</b> — a platform that incorporates AI, cutting-edge reactions, and automated synthesis to reduce attrition in early-stage drug discovery. &nbsp;<b>Acquired by</b> Merck Group (08/24).</p>
   </section>
 
   <!-- ===== Professional & Leadership Experience ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Professional &amp; Leadership Experience</h2>
+    <h2 class="cv-h" id="professional-leadership-experience">Professional &amp; Leadership Experience</h2>
     <div class="row"><span><span class="role">Founder &amp; President</span><span class="div">|</span><span class="aff">Yale University Chapter of the Biophysical Society</span></span><span class="r-date">01/24 – Present</span></div>
     <div class="row"><span><span class="role">Reviewing Editor</span><span class="div">|</span><span class="aff">Springer Nature</span></span><span class="r-date">09/25 – Present</span></div>
     <div class="row"><span><span class="role">Biophysics Research Seminar Organizer</span><span class="div">|</span><span class="aff">Yale University</span></span><span class="r-date">08/22 – 05/24</span></div>
@@ -407,7 +469,7 @@
 
   <!-- ===== Awards ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Awards, Scholarships, &amp; Honors</h2>
+    <h2 class="cv-h" id="awards-scholarships-honors">Awards, Scholarships, &amp; Honors</h2>
     <p class="subhead">Industry</p>
     <ul class="courses">
       <li><span class="role">First Place, Merck Innovation Cup</span><span class="div">|</span><span class="aff">Merck Group</span><span class="r-date">07/24</span></li>
@@ -433,7 +495,7 @@
 
   <!-- ===== Publications ===== -->
   <section class="cv-section flow">
-    <h2 class="cv-h">Selected Publications</h2>
+    <h2 class="cv-h" id="selected-publications">Selected Publications</h2>
     <ol class="refs">
       <li><span class="idx">[18]</span>Shee, Y; Smaldone, AM; <span class="me">Kyro, GW</span>; Batista, VS. “FragmentRetro: A Quadratic Retrosynthetic Method Based on Fragmentation Algorithms.” <em>Journal of Chemical Theory and Computation</em>. 2026. DOI: <a href="https://doi.org/10.1021/acs.jctc.5c01632">10.1021/acs.jctc.5c01632</a></li>
       <li><span class="idx">[17]</span><span class="me">Kyro, GW</span>; Smaldone, AM; Shee, Y; Xu, T; Batista, VS. “T-ALPHA: A Hierarchical Transformer-Based Deep Neural Network for Protein–Ligand Binding Affinity Prediction with Uncertainty-Aware Self-Learning for Protein-Specific Alignment.” <em>Journal of Chemical Information and Modeling</em>. 2025, 65, 5. DOI: <a href="https://doi.org/10.1021/acs.jcim.4c02332">10.1021/acs.jcim.4c02332</a></li>
@@ -458,7 +520,7 @@
 
   <!-- ===== Presentations ===== -->
   <section class="cv-section flow">
-    <h2 class="cv-h">Selected Presentations &amp; Lectures</h2>
+    <h2 class="cv-h" id="selected-presentations-lectures">Selected Presentations &amp; Lectures</h2>
     <ol class="refs">
       <li><span class="idx">[33]</span>Industry Trends in AI for Scientific Discovery. Invited Interview at <em>PhD Pathways Speaker Series, Yale University</em> (2025).</li>
       <li><span class="idx">[32]</span>Artificial Intelligence for Preclinical Drug Safety. Invited Round-Table Discussion at <em>Novartis Institutes for Biomedical Research</em> (2025).</li>
@@ -498,7 +560,7 @@
 
   <!-- ===== Teaching ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Teaching Experience</h2>
+    <h2 class="cv-h" id="teaching-experience">Teaching Experience</h2>
     <div class="entry">
       <div class="entry-head"><span class="entry-org">Yale University</span></div>
       <div class="entry-role">Teaching Fellow</div>
@@ -524,7 +586,7 @@
 
   <!-- ===== Peer Review ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Scientific Peer Review Contributions</h2>
+    <h2 class="cv-h" id="scientific-peer-review-contributions">Scientific Peer Review Contributions</h2>
     <p class="subhead">Reviewing Editor</p>
     <ul class="plain-list"><li>Springer Nature</li></ul>
     <p class="subhead">Trusted Reviewer</p>
@@ -554,7 +616,7 @@
 
   <!-- ===== Media Coverage ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Media Coverage</h2>
+    <h2 class="cv-h" id="media-coverage">Media Coverage</h2>
     <ul class="plain-list">
       <li>Featured by the <a href="https://www.biophysics.org/blog/biophysics-week-student-spotlight-gregory-kyro">Biophysical Society</a> as the founder and president of the Yale University Chapter to articulate a first-principles perspective on biophysics and intellectual rigor.</li>
       <li>Featured by <a href="https://www.emdgroup.com/en/research/open-innovation/innovation-cup.html">Merck Group</a> for winning first place at the 2024 Merck Innovation Cup.</li>
@@ -567,7 +629,7 @@
 
   <!-- ===== Mentees ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Selected Research Mentees</h2>
+    <h2 class="cv-h" id="selected-research-mentees">Selected Research Mentees</h2>
     <ul class="plain-list">
       <li><b>Tsach Mackey</b> — Technical Staff, xAI</li>
       <li><b>Rafael I. Brent</b> — PhD candidate, David Baker Lab</li>
@@ -578,7 +640,7 @@
 
   <!-- ===== Open-source ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Selected Open-Source Software</h2>
+    <h2 class="cv-h" id="selected-open-source-software">Selected Open-Source Software</h2>
     <ul class="plain-list">
       <li><b>T-ALPHA</b> — a hierarchical transformer-based deep neural network for protein–ligand binding affinity prediction with uncertainty-aware self-learning for protein-specific alignment | <a href="https://github.com/gregory-kyro/T-ALPHA">github.com/gregory-kyro/T-ALPHA</a></li>
       <li><b>CardioGenAI</b> — a machine learning-based framework for re-engineering drugs for reduced hERG liability | <a href="https://github.com/gregory-kyro/CardioGenAI">github.com/gregory-kyro/CardioGenAI</a></li>
@@ -589,7 +651,7 @@
 
   <!-- ===== Apps ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Apps</h2>
+    <h2 class="cv-h" id="apps">Apps</h2>
     <ul class="plain-list">
       <li><b>BibleVerse</b> — a modern Bible interface with latent-space verse and passage retrieval, scripture-augmented LLMs designed for breadth- and depth-first knowledge expansion, and a reader with chapter-conditioned LLM chat and annotation | <a href="https://bibleverse-ai.com">bibleverse-ai.com</a></li>
     </ul>
@@ -597,7 +659,7 @@
 
   <!-- ===== Professional Development ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Selected Professional Development</h2>
+    <h2 class="cv-h" id="selected-professional-development">Selected Professional Development</h2>
     <div class="entry">
       <div class="entry-head"><span class="entry-org">Massachusetts Institute of Technology, edX</span></div>
       <ul class="courses">
@@ -617,7 +679,7 @@
 
   <!-- ===== Memberships ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Professional Memberships</h2>
+    <h2 class="cv-h" id="professional-memberships">Professional Memberships</h2>
     <ul class="plain-list">
       <li>American Chemical Society</li>
       <li>Biophysical Society</li>
@@ -630,7 +692,7 @@
 
   <!-- ===== PhD Research Collaborations ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Selected PhD Research Collaborations</h2>
+    <h2 class="cv-h" id="selected-phd-research-collaborations">Selected PhD Research Collaborations</h2>
     <p class="subhead">Industry Collaborations</p>
     <ul class="plain-list">
       <li>Pfizer — Drug Safety and Toxicology</li>
@@ -650,7 +712,7 @@
 
   <!-- ===== Technical Skills ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Technical Skills</h2>
+    <h2 class="cv-h" id="technical-skills">Technical Skills</h2>
     <ul class="plain-list labeled">
       <li><b>Deep Learning Architectures:</b> transformers, diffusion models, GANs, autoencoders, RNNs, LSTMs, GRUs, CNNs, GNNs, LLMs, and more</li>
       <li><b>Machine Learning Architectures:</b> linear regression, logistic regression, decision trees, random forests, support vector machines, gradient boosting machines, and more</li>
@@ -664,7 +726,7 @@
 
   <!-- ===== Foundational Skills ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Foundational Skills</h2>
+    <h2 class="cv-h" id="foundational-skills">Foundational Skills</h2>
     <ul class="plain-list labeled">
       <li><b>Problem Solving &amp; Critical Thinking:</b> first-principles reasoning, creativity skills, optimization, and more</li>
       <li><b>Leadership &amp; Project Management:</b> idea generation, time management, multitasking, strategic thinking, mentorship, and more</li>
@@ -675,7 +737,7 @@
 
   <!-- ===== Personal Achievements ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Selected Personal Achievements</h2>
+    <h2 class="cv-h" id="selected-personal-achievements">Selected Personal Achievements</h2>
     <ul class="plain-list">
       <li>Have done a high-intensity workout at least once every day since 2010 (no exceptions).</li>
       <li>2944 puzzle rating (99.9th percentile) and 1999 bullet rating (99.8th percentile) on chess.com.</li>
@@ -687,7 +749,7 @@
 
   <!-- ===== Volunteer ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">Volunteer Activities</h2>
+    <h2 class="cv-h" id="volunteer-activities">Volunteer Activities</h2>
     <div class="row"><span><span class="role">Scientific Speaker</span><span class="div">|</span><span class="aff">Yale Pathways to Science</span></span><span class="r-date">12/23 – Present</span></div>
     <div class="row"><span><span class="role">Outreach Volunteer</span><span class="div">|</span><span class="aff">American Chemical Society</span></span><span class="r-date">06/19 – 06/20</span></div>
     <div class="row"><span><span class="role">Medical Volunteer</span><span class="div">|</span><span class="aff">Long Island Jewish Medical Center</span></span><span class="r-date">06/17 – 01/19</span></div>
@@ -698,7 +760,7 @@
 
   <!-- ===== Coursework ===== -->
   <section class="cv-section coursework">
-    <h2 class="cv-h">Selected Coursework</h2>
+    <h2 class="cv-h" id="selected-coursework">Selected Coursework</h2>
     <p class="subhead">Yale University</p>
     <ul class="plain-list labeled">
       <li><b>Machine Learning &amp; Computational Modeling:</b> Machine Learning &amp; Quantum Computing, Computational Chemistry, Computer Science &amp; The Modern Intellectual Agenda</li>
@@ -717,7 +779,7 @@
 
   <!-- ===== References ===== -->
   <section class="cv-section">
-    <h2 class="cv-h">References</h2>
+    <h2 class="cv-h" id="references">References</h2>
     <div class="ref-card">
       <div class="ref-name">Victor S. Batista, <span>Yale University</span></div>
       <ul><li>John Gamble Kirkwood Professor of Chemistry · PhD Advisor · <a href="mailto:victor.batista@yale.edu">victor.batista@yale.edu</a></li></ul>
