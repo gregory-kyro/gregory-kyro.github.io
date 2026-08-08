@@ -428,6 +428,27 @@ details.disclosure > ul {
     letter-spacing: -0.008em;
 }
 
+/* Always-visible Overview lists (Selected work / research / impact).
+   Body sits in the soft tone; the bold lead-ins pop in full white so the
+   eye lands on the high-signal phrase first. */
+.about-section .overview-list {
+    margin: 1rem 0 0;
+    padding-left: 1.25rem;
+    font-size: 0.94em;
+    color: var(--fg-soft);
+    letter-spacing: -0.008em;
+}
+.about-section .overview-list li {
+    margin: 0.8rem 0;
+    line-height: 1.62;
+}
+.about-section .overview-list li strong {
+    color: var(--fg);
+    font-weight: 600;
+}
+/* Chapter spacing between a list and the next narrative paragraph */
+.about-section .overview-list + p { margin-top: 2.4rem; }
+
 /* --------------------------------------------------------------------- */
 /* Résumé-style entries (Experience / Education)                          */
 /* --------------------------------------------------------------------- */
