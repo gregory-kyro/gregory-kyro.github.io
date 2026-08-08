@@ -144,7 +144,8 @@
   }
   .subhead:first-of-type{margin-top:0.2rem;}
 
-  /* Contents: quick index of the sections that follow the Overview */
+  /* Contents: clickable index of the sections that follow the Overview */
+  .cv-toc{margin-top:1.6rem;}
   .cv-toc ol{
     list-style:none;
     margin:0.2rem 0 0;
@@ -155,27 +156,22 @@
   .cv-toc li{
     break-inside:avoid;
     margin:0;
-    padding:0.24rem 0;
+    padding:0.22rem 0;
+    line-height:1.25;
   }
+  /* persistent link affordance (no hover in PDFs): accent color + underline */
   .cv-toc a.toc-row{
-    display:flex;
-    align-items:baseline;
-    gap:0.5rem;
+    display:inline-block;
     font-size:0.92rem;
     line-height:1.35;
-    color:var(--soft);
-    text-decoration:none;
+    color:var(--accent);
+    text-decoration:underline;
+    text-decoration-color:rgba(0,113,227,0.4);
+    text-underline-offset:2.5px;
+    text-decoration-thickness:0.6px;
+    transition:text-decoration-color .2s ease,opacity .2s ease;
   }
-  .cv-toc a.toc-row:hover,
-  .cv-toc a.toc-row:hover .toc-pg{color:var(--accent);}
-  .cv-toc .toc-name{flex:1 1 auto;min-width:0;}
-  .cv-toc .toc-dots{
-    flex:1 1 auto;
-    border-bottom:1px dotted var(--line-strong);
-    transform:translateY(-0.18em);
-    min-width:0.8rem;
-  }
-  .cv-toc .toc-pg{flex:0 0 auto;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .cv-toc a.toc-row:hover{text-decoration-color:var(--accent);opacity:0.82;}
 
   p{margin:0.65rem 0;color:var(--soft);}
   .cv-lead{color:var(--soft);margin:0.4rem 0 0.6rem;}
@@ -351,28 +347,28 @@
   <section class="cv-section cv-toc">
     <h2 class="cv-h">Contents</h2>
     <ol>
-      <li><a class="toc-row" href="#education"><span class="toc-name">Education</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Education">3</span></a></li>
-      <li><a class="toc-row" href="#research-experience"><span class="toc-name">Research Experience</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Research Experience">3</span></a></li>
-      <li><a class="toc-row" href="#innovations-acquired-by-pharma"><span class="toc-name">Innovations Acquired by Pharma</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Innovations Acquired by Pharma">4</span></a></li>
-      <li><a class="toc-row" href="#professional-leadership-experience"><span class="toc-name">Professional &amp; Leadership Experience</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Professional & Leadership Experience">4</span></a></li>
-      <li><a class="toc-row" href="#awards-scholarships-honors"><span class="toc-name">Awards, Scholarships, &amp; Honors</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Awards, Scholarships, & Honors">4</span></a></li>
-      <li><a class="toc-row" href="#selected-publications"><span class="toc-name">Selected Publications</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Publications">5</span></a></li>
-      <li><a class="toc-row" href="#selected-presentations-lectures"><span class="toc-name">Selected Presentations &amp; Lectures</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Presentations & Lectures">5</span></a></li>
-      <li><a class="toc-row" href="#teaching-experience"><span class="toc-name">Teaching Experience</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Teaching Experience">7</span></a></li>
-      <li><a class="toc-row" href="#scientific-peer-review-contributions"><span class="toc-name">Scientific Peer Review Contributions</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Scientific Peer Review Contributions">8</span></a></li>
-      <li><a class="toc-row" href="#media-coverage"><span class="toc-name">Media Coverage</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Media Coverage">8</span></a></li>
-      <li><a class="toc-row" href="#selected-research-mentees"><span class="toc-name">Selected Research Mentees</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Research Mentees">8</span></a></li>
-      <li><a class="toc-row" href="#selected-open-source-software"><span class="toc-name">Selected Open-Source Software</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Open-Source Software">9</span></a></li>
-      <li><a class="toc-row" href="#apps"><span class="toc-name">Apps</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Apps">9</span></a></li>
-      <li><a class="toc-row" href="#selected-professional-development"><span class="toc-name">Selected Professional Development</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Professional Development">9</span></a></li>
-      <li><a class="toc-row" href="#professional-memberships"><span class="toc-name">Professional Memberships</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Professional Memberships">9</span></a></li>
-      <li><a class="toc-row" href="#selected-phd-research-collaborations"><span class="toc-name">Selected PhD Research Collaborations</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected PhD Research Collaborations">10</span></a></li>
-      <li><a class="toc-row" href="#technical-skills"><span class="toc-name">Technical Skills</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Technical Skills">10</span></a></li>
-      <li><a class="toc-row" href="#foundational-skills"><span class="toc-name">Foundational Skills</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Foundational Skills">10</span></a></li>
-      <li><a class="toc-row" href="#selected-personal-achievements"><span class="toc-name">Selected Personal Achievements</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Personal Achievements">11</span></a></li>
-      <li><a class="toc-row" href="#volunteer-activities"><span class="toc-name">Volunteer Activities</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Volunteer Activities">11</span></a></li>
-      <li><a class="toc-row" href="#selected-coursework"><span class="toc-name">Selected Coursework</span><span class="toc-dots"></span><span class="toc-pg" data-sec="Selected Coursework">11</span></a></li>
-      <li><a class="toc-row" href="#references"><span class="toc-name">References</span><span class="toc-dots"></span><span class="toc-pg" data-sec="References">12</span></a></li>
+      <li><a class="toc-row" href="#education">Education</a></li>
+      <li><a class="toc-row" href="#research-experience">Research Experience</a></li>
+      <li><a class="toc-row" href="#innovations-acquired-by-pharma">Innovations Acquired by Pharma</a></li>
+      <li><a class="toc-row" href="#professional-leadership-experience">Professional &amp; Leadership Experience</a></li>
+      <li><a class="toc-row" href="#awards-scholarships-honors">Awards, Scholarships, &amp; Honors</a></li>
+      <li><a class="toc-row" href="#selected-publications">Selected Publications</a></li>
+      <li><a class="toc-row" href="#selected-presentations-lectures">Selected Presentations &amp; Lectures</a></li>
+      <li><a class="toc-row" href="#teaching-experience">Teaching Experience</a></li>
+      <li><a class="toc-row" href="#scientific-peer-review-contributions">Scientific Peer Review Contributions</a></li>
+      <li><a class="toc-row" href="#media-coverage">Media Coverage</a></li>
+      <li><a class="toc-row" href="#selected-research-mentees">Selected Research Mentees</a></li>
+      <li><a class="toc-row" href="#selected-open-source-software">Selected Open-Source Software</a></li>
+      <li><a class="toc-row" href="#apps">Apps</a></li>
+      <li><a class="toc-row" href="#selected-professional-development">Selected Professional Development</a></li>
+      <li><a class="toc-row" href="#professional-memberships">Professional Memberships</a></li>
+      <li><a class="toc-row" href="#selected-phd-research-collaborations">Selected PhD Research Collaborations</a></li>
+      <li><a class="toc-row" href="#technical-skills">Technical Skills</a></li>
+      <li><a class="toc-row" href="#foundational-skills">Foundational Skills</a></li>
+      <li><a class="toc-row" href="#selected-personal-achievements">Selected Personal Achievements</a></li>
+      <li><a class="toc-row" href="#volunteer-activities">Volunteer Activities</a></li>
+      <li><a class="toc-row" href="#selected-coursework">Selected Coursework</a></li>
+      <li><a class="toc-row" href="#references">References</a></li>
     </ol>
   </section>
 
