@@ -478,8 +478,9 @@ details.disclosure > ul strong { color: var(--fg); font-weight: 600; }
 .line-main strong { color: var(--fg); font-weight: 600; }
 .line-sep { color: var(--fg-muted); margin: 0 0.32rem; }
 
-/* Bulleted course list that keeps a right-aligned date (Teaching, grouped by school) */
+/* Bulleted course list with a right-aligned date (Teaching, grouped by school) */
 .course-list {
+    list-style: none;
     padding-left: 1.35rem;
     margin: 0.45rem 0 0;
     font-size: 0.94rem;
@@ -487,18 +488,31 @@ details.disclosure > ul strong { color: var(--fg); font-weight: 600; }
     color: var(--fg-soft);
 }
 .course-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
     position: relative;
-    padding-right: 6.5rem;
     margin: 0.42rem 0;
 }
-.course-list li strong { color: var(--fg); font-weight: 600; }
-.course-list li .line-date {
+.course-list li::before {
+    content: "";
     position: absolute;
-    right: 0;
-    top: 0;
+    left: -0.95rem;
+    top: 0.6em;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--fg-muted);
+}
+.course-list li strong { color: var(--fg); font-weight: 600; }
+.course-list li .line-main { color: var(--fg-soft); flex: 1 1 auto; min-width: 0; }
+.course-list li .line-date {
+    position: static;
     color: var(--fg-muted);
     font-size: 0.85rem;
     white-space: nowrap;
+    flex: 0 0 auto;
     font-variant-numeric: tabular-nums;
 }
 .line-date {
