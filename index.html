@@ -57,27 +57,25 @@
         html {
             margin: 0;
             padding: 0;
-            min-height: 100%;
+            height: 100%;
             width: 100%;
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
             color: #f5f5f7;
             background-color: #000000;
+            overflow: hidden;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
-        .hero {
+        .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            min-height: 100svh;
+            height: 100vh;
             position: relative;
             z-index: 2;
-            padding: 0 1rem;
-            will-change: transform, opacity;
         }
 
         .logo {
@@ -196,13 +194,12 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            z-index: 0;
+            z-index: 1;
             display: block;
-            will-change: transform, opacity;
         }
 
         @media (max-width: 768px) {
-            .hero {
+            .container {
                 padding: 0.5rem;
                 transform: scale(1.0);
                 transform-origin: top center;
@@ -250,105 +247,44 @@
             }
         }
 
-        /* ---------- entry veil: crisp, clean site fade-in ---------- */
-        .veil {
-            position: fixed;
-            inset: 0;
-            background: #000000;
-            z-index: 9999;
-            opacity: 1;
-            pointer-events: none;
-            transition: opacity 0.8s ease;
+        /* ---------- entry: a crisp, quiet fade-in as the page opens ---------- */
+        /* the field of nodes eases up from black */
+        #neural-network { animation: cnvIn 1.6s ease both; }
+        @keyframes cnvIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
         }
-        body.is-ready .veil { opacity: 0; }
 
-        /* ---------- hero entrance: tight staggered rise ---------- */
-        .hero > * { opacity: 0; }
-        body.is-ready .hero > * {
-            animation: heroRise 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        /* hero elements settle in on a refined, decelerating curve */
+        .container > * {
+            animation: riseIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
-        body.is-ready .hero > a           { animation-delay: 0.06s; }
-        body.is-ready .hero .title        { animation-delay: 0.16s; }
-        body.is-ready .hero .subtitle     { animation-delay: 0.26s; }
-        body.is-ready .hero .links        { animation-delay: 0.38s; }
-        body.is-ready .hero .social-links { animation-delay: 0.50s; }
-        @keyframes heroRise {
-            from { opacity: 0; transform: translateY(16px); }
+        .container > a           { animation: riseInLogo 1.05s cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: 0.08s; }
+        .container .title        { animation-delay: 0.22s; }
+        .container .subtitle     { animation-delay: 0.34s; }
+        .container .links        { animation-delay: 0.48s; }
+        .container .social-links { animation-delay: 0.60s; }
+        @keyframes riseIn {
+            from { opacity: 0; transform: translateY(14px); }
             to   { opacity: 1; transform: translateY(0); }
         }
-
-        /* ---------- scroll cue: gentle invitation to descend ---------- */
-        .scroll-cue {
-            position: fixed;
-            left: 50%;
-            bottom: 1.25rem;
-            transform: translateX(-50%);
-            color: #a1a1a6;
-            text-decoration: none;
-            z-index: 4;
-            opacity: 0;
-            line-height: 0;
-            transition: opacity 0.5s ease, color 0.3s ease;
+        @keyframes riseInLogo {
+            from { opacity: 0; transform: translateY(16px) scale(0.985); filter: blur(2px); }
+            to   { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
         }
-        body.is-ready .scroll-cue { opacity: 0.5; transition-delay: 1s; }
-        .scroll-cue:hover { color: #f5f5f7; opacity: 0.85; }
-        .scroll-cue svg { display: block; animation: cueBob 2.2s ease-in-out infinite; }
-        @keyframes cueBob {
-            0%, 100% { transform: translateY(0); }
-            50%      { transform: translateY(5px); }
-        }
-
-        /* ---------- the About "dimension" beneath the hero ---------- */
-        .portal {
-            position: relative;
-            z-index: 2;
-            background: #000000;
-            min-height: 100vh;
-        }
-        /* a thin luminous threshold marks the crossing between dimensions */
-        .portal::before {
-            content: '';
-            position: absolute;
-            left: 0; right: 0; top: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(41, 151, 255, 0.45) 50%, transparent);
-        }
-        .portal::after {
-            content: '';
-            position: absolute;
-            left: 0; right: 0; top: 0;
-            height: 200px;
-            pointer-events: none;
-            background: radial-gradient(120% 100% at 50% 0%, rgba(41, 151, 255, 0.06), transparent 70%);
-        }
-        /* the injected About page fades itself in via .content; keep it calm */
-        #about-mount .container { animation: none; }
 
         @media (prefers-reduced-motion: reduce) {
-            .veil { display: none; }
-            .hero > * { opacity: 1; animation: none; }
-            .scroll-cue svg { animation: none; }
-        }
-
-        @media (max-width: 768px) {
-            .scroll-cue { bottom: 1.4rem; }
-        }
-        /* never let the cue crowd the hero content on short viewports */
-        @media (max-height: 640px) {
-            .scroll-cue { display: none; }
+            #neural-network, .container > * { animation: none; opacity: 1; }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="https://gregorykyro.com/">
 </head>
 
 <body>
-    <div class="veil" aria-hidden="true"></div>
-    <noscript><style>.hero>*{opacity:1!important}.veil{display:none!important}</style></noscript>
     <canvas id="neural-network"></canvas>
 
-    <section class="hero">
+    <div class="container">
         <a href="https://gregorykyro.com/about/" aria-label="About Gregory W. Kyro, PhD">
             <img src="https://gregorykyro.com/images/gwk-headshot.jpg?v=6" alt="Gregory W. Kyro, PhD" class="logo">
         </a>
@@ -391,19 +327,7 @@
                 <i class="fas fa-graduation-cap"></i>
             </a>
         </div>
-    </section>
-
-    <a class="scroll-cue" href="#about-portal" aria-label="Scroll down to About">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-
-    <section class="portal" id="about-portal">
-        <div id="about-mount">
-            <noscript>
-                <div class="container"><article class="content about-section" style="text-align:center"><p>Read more <a href="/about/">about me &rarr;</a></p></article></div>
-            </noscript>
-        </div>
-    </section>
+    </div>
 
     <script>
         const canvas = document.getElementById('neural-network');
@@ -497,64 +421,6 @@
 
 
         animate();
-    </script>
-
-    <script>
-        // ---- crisp entry + descent into the About dimension ----
-        (function () {
-            const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-            // clean fade-in on entry (double rAF so the transition actually runs)
-            requestAnimationFrame(function () {
-                requestAnimationFrame(function () { document.body.classList.add('is-ready'); });
-            });
-
-            // Pull the About page in beneath the hero — single source of truth.
-            const mount = document.getElementById('about-mount');
-            fetch('/about/', { credentials: 'same-origin' })
-                .then(function (r) { if (!r.ok) throw new Error('fetch failed'); return r.text(); })
-                .then(function (html) {
-                    const doc = new DOMParser().parseFromString(html, 'text/html');
-                    // Skip the nav header for a clean, uninterrupted descent into About.
-                    const container = doc.querySelector('.container');
-                    const footer = doc.querySelector('footer.footer');
-                    let out = '';
-                    if (container) out += container.outerHTML;
-                    if (footer) out += footer.outerHTML;
-                    if (out) mount.innerHTML = out;
-                })
-                .catch(function () {
-                    mount.innerHTML = '<div class="container"><article class="content about-section" style="text-align:center"><p>Read more <a href="/about/">about me &rarr;</a></p></article></div>';
-                });
-
-            // Scroll-driven transition: the cosmos recedes as the About dimension rises.
-            if (!reduce) {
-                const hero = document.querySelector('.hero');
-                const cue = document.querySelector('.scroll-cue');
-                let ticking = false;
-                function update() {
-                    const y = window.scrollY || window.pageYOffset || 0;
-                    const vh = window.innerHeight || 1;
-                    const p = Math.min(1, y / vh);
-                    canvas.style.opacity = String(Math.max(0, 1 - p * 1.1));
-                    canvas.style.transform = 'scale(' + (1 - 0.12 * p).toFixed(4) + ')';
-                    if (hero) {
-                        hero.style.opacity = String(Math.max(0, 1 - p * 1.15));
-                        hero.style.transform = 'translateY(' + (-y * 0.28).toFixed(2) + 'px)';
-                    }
-                    if (cue) {
-                        if (p > 0.002) cue.style.opacity = String(Math.max(0, 0.5 * (1 - p * 3)));
-                        else cue.style.removeProperty('opacity');
-                    }
-                    ticking = false;
-                }
-                window.addEventListener('scroll', function () {
-                    if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
-                }, { passive: true });
-                window.addEventListener('resize', update, { passive: true });
-                update();
-            }
-        })();
     </script>
     <!-- AI chat assistant temporarily disabled (code kept for easy re-enable): <script src="/js/chat.js" defer></script> -->
 </body>
