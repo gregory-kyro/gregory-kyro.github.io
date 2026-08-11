@@ -281,27 +281,21 @@
         .scroll-cue {
             position: fixed;
             left: 50%;
-            bottom: 2.1rem;
+            bottom: 1.25rem;
             transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
             color: #a1a1a6;
             text-decoration: none;
             z-index: 4;
             opacity: 0;
-            transition: opacity 0.45s ease, color 0.3s ease;
-            font-size: 0.6rem;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
+            line-height: 0;
+            transition: opacity 0.5s ease, color 0.3s ease;
         }
-        body.is-ready .scroll-cue { opacity: 0.9; transition-delay: 0.95s; }
-        .scroll-cue:hover { color: #f5f5f7; }
-        .scroll-cue svg { animation: cueBob 2.1s ease-in-out infinite; }
+        body.is-ready .scroll-cue { opacity: 0.5; transition-delay: 1s; }
+        .scroll-cue:hover { color: #f5f5f7; opacity: 0.85; }
+        .scroll-cue svg { display: block; animation: cueBob 2.2s ease-in-out infinite; }
         @keyframes cueBob {
-            0%, 100% { transform: translateY(0); opacity: 0.8; }
-            50%      { transform: translateY(5px); opacity: 1; }
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(5px); }
         }
 
         /* ---------- the About "dimension" beneath the hero ---------- */
@@ -338,6 +332,10 @@
 
         @media (max-width: 768px) {
             .scroll-cue { bottom: 1.4rem; }
+        }
+        /* never let the cue crowd the hero content on short viewports */
+        @media (max-height: 640px) {
+            .scroll-cue { display: none; }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -396,8 +394,7 @@
     </section>
 
     <a class="scroll-cue" href="#about-portal" aria-label="Scroll down to About">
-        <span>Scroll</span>
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
 
     <section class="portal" id="about-portal">
@@ -518,11 +515,10 @@
                 .then(function (r) { if (!r.ok) throw new Error('fetch failed'); return r.text(); })
                 .then(function (html) {
                     const doc = new DOMParser().parseFromString(html, 'text/html');
-                    const header = doc.querySelector('header.header');
+                    // Skip the nav header for a clean, uninterrupted descent into About.
                     const container = doc.querySelector('.container');
                     const footer = doc.querySelector('footer.footer');
                     let out = '';
-                    if (header) out += header.outerHTML;
                     if (container) out += container.outerHTML;
                     if (footer) out += footer.outerHTML;
                     if (out) mount.innerHTML = out;
@@ -546,7 +542,10 @@
                         hero.style.opacity = String(Math.max(0, 1 - p * 1.15));
                         hero.style.transform = 'translateY(' + (-y * 0.28).toFixed(2) + 'px)';
                     }
-                    if (cue) cue.style.opacity = String(Math.max(0, 0.9 - p * 4));
+                    if (cue) {
+                        if (p > 0.002) cue.style.opacity = String(Math.max(0, 0.5 * (1 - p * 3)));
+                        else cue.style.removeProperty('opacity');
+                    }
                     ticking = false;
                 }
                 window.addEventListener('scroll', function () {
